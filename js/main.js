@@ -8,4 +8,4 @@ const year = dt.getFullYear();
 document.querySelector("#year").textContent = year;
 
 //last modified date 
-document.querySelector("#lmodified").textContent = document.lastModified
+document.querySelector("#lmodified").textContent = document.lastModified;
