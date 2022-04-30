@@ -1,0 +1,19 @@
+@media only screen and (max-width: 38em){
+    main{
+        display: block;
+    }
+
+    body{
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    article{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    footer{
+        line-height: 1.75em;   
+    }
+}
