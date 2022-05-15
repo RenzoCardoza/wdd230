@@ -100,4 +100,13 @@
         margin-left: 2rem;
     }
 
+    #copyright-names{
+        display: flex;
+        justify-content: center;
+    }
+
+    #copyright-names p{
+        border-right: 1px solid #eee;
+        padding: .5rem;
+    }
 }

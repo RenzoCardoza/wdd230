@@ -60,13 +60,9 @@
     }
 
     #footer-info p{
-        border-right: 1px solid #eee;
         padding: 0.5rem;
     }
 
-    #footer-info :nth-child(4){
-        border: none;
-    }
 
     main{
         grid-template-columns: 1fr 2fr 1fr;
