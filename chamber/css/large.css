@@ -9,10 +9,11 @@
     }
 
     nav{
-        margin-left: -1rem;
-        margin-top: 3.5rem;
+        margin-left: 1.5rem;
+        margin-top: 1rem;
         grid-column: 3 / 5;
         grid-row: 1;
+        justify-self: center;
     }
 
     nav ul li a{
@@ -33,7 +34,7 @@
     }
 
     #social img{
-        margin-top: 1.2rem;
+        margin-top: 2rem;
         width: 30%;
     }
 
@@ -45,6 +46,7 @@
 
     #date{
         grid-column: 1 / 7;
+        font-size: 1.2rem;
     }
 
     main{
