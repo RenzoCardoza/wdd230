@@ -18,5 +18,16 @@ document.querySelector("#lmodified").textContent = lmodified;
 
 //place the date into the div element with ID of date
 const fullDate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(dt);
-
 document.querySelector("#date").innerHTML = `${fullDate}`;
+
+//Now for the Banner that shows only on Mondays and Tuesdays
+
+//get the join banner element by its id
+let joinBanner = document.querySelector("#join-banner");
+//depending the day the style.display property will change
+if (dt.getDay() == 1 || dt.getDay() == 2){
+    joinBanner.style.display = "block";
+}
+else{
+    joinBanner.style.display = "none";
+}

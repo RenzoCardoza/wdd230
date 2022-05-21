@@ -6,7 +6,27 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 body{
     margin: 0 auto;
-    background-color: #B3D3FA;
+    /* background-color: #B3D3FA; */
+    background-color: #C9F0FF;
+}
+
+h2, h3{
+    font-family: 'Arvo', serif;
+    letter-spacing: 0.06em;
+}
+
+p{
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 0.09em; 
+}
+
+#join-banner{
+    background-color: #111E34;
+    padding: 0.5rem;
+    color: #EDF3DE;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 2rem;
 }
 
 header{
@@ -36,27 +56,6 @@ header button{
     margin-right: .5rem;
 }
 
-/* header .headings{
-    grid-column: 2;
-    font-family: 'Arvo', serif;
-    letter-spacing: 0.06em;
-    color: #EDF3DE;
-    font-size: .6rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    text-align: center;
-    line-height: 1.6rem;
-    display: flex;
-    flex-direction: column;
-}
-
-header .headings div{
-    font-family: 'Nunito', sans-serif;
-    letter-spacing: 0.10em;
-    font-size: .8rem;
-    margin-top: -13px;
-} */
-
 #social{
     grid-column: 2;
     margin-top: 2.5rem;
@@ -64,7 +63,7 @@ header .headings div{
 }
 
 #social img{
-    width: 30%;
+    width: 40%;
 }
 
 nav{
@@ -124,19 +123,145 @@ main{
     grid-gap: 15px;
 }
 
-#join{
-    display: none;
+main section{
+    border: 1px solid #000;
+    background-color: #EFEFF0;
+    color: #111E34;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-main section{
-    padding: 7em;
-    border: 1px solid #000;
-    background-color: #eee;
+main section h2{
+    text-shadow: 5px 5px 10px #111E34;
+}
+
+#siteName-action{
+    padding: 0;
+    position: relative;
+}
+
+#siteName-action img{
+    width: 100%;
+    height: 100%;
+}
+
+#welcome{
+    font-size: 1.2rem;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+
+#join-button{
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    background-color: #806E60;
+    padding: 1rem; 
+    border-radius: 10px;
+    border: 2px solid #111E34;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color:#111E34;
+    font-size: 1rem;
+}
+
+#join-button a{
+    text-decoration: none;  
+}
+
+#event{
+    padding: 1.5rem;
+    text-align: center;
+}
+
+#event-title{
+    margin-top: 0;
+}
+
+#event p{
+    line-height: 1.5rem;
+    margin-bottom: 0;
+}
+
+#weather{
+    padding: 1rem;
+    text-align: center;
+    width: 80%;
+    justify-self: center;
+}
+
+#img-temp{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#weather h3{
+    text-align: right;
+}
+
+#temp{
+    font-size: 2rem;
+}
+
+#wind-speed{
+    border-top: 1px solid #111E34;
+    display: flex;
+    justify-content: space-around;
+}
+
+#wind-chill{
+    display: flex;
+    justify-content: space-around;
+}
+
+#join{
+    display: none;
+    padding: 1.5rem;
+    text-align: center;
+    line-height: 1.7rem;
+}
+
+#h-join-button{
+    background-color: #111E34;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+#news{
+    padding: 1rem;
+    text-align: center;
+}
+
+#news p{
+    line-height: 1.5rem;
 }
 
 #spotlights{
     padding: 1em;
 }
+
+#spotlight1, #spotlight2, #spotlight3{
+    padding: 0.8rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#spotlight1 h2, #spotlight2 h2, #spotlight3 h2{
+    margin-top: 0.2rem;
+}
+
+.spotlight-email{
+    border-top: 1px solid #111E34;
+    margin-bottom: 0;
+    padding-top: 0.5rem;
+}
+
+#spotlight1 p, #spotlight2 p, #spotlight3 p{
+    margin-top: 0.5rem;
+    margin-bottom: 0.4rem;
+}
+
 
 #spotlight1, #spotlight2{
     margin-top: 0;
