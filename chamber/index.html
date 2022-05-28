@@ -27,7 +27,7 @@
 
     <header>
         <!-- Logo -->
-        <img id="logo-img" src="images/logo_rz.jpg" alt="Pearl of the pacific logo">
+        <img id="logo-img" src="images/chamber_logo.webp" alt="Pearl of the pacific logo">
 
         <!-- social media logos -->
         <section id="social">
@@ -53,7 +53,12 @@
 
     <main>
         <section id="siteName-action">
-            <img src="images/Guayaquil-Ecuador.jpg" alt="Guayaquil city">
+            <picture>
+                <source media="(min-width: 38.5em) and (max-width: 67.5em)" srcset="images/wdd230_org_medium.jpg">
+                <source media="(min-width: 68em)" srcset="images/wdd230_org_large.jpg">
+                <img src="images/wdd230_org_small.jpg" alt="business meeting">
+            </picture>
+            <!-- <img src="images/Guayaquil-Ecuador.jpg" alt="Guayaquil city"> -->
             <h2 id="welcome">Welcome to Pearl of the Pacific</h2>
             <a href="#"><h3 id="join-button">Join the Chamber</h3></a>
         </section>
@@ -71,20 +76,20 @@
         <section id="weather">
             <h2>Weather</h2>
             <div id="img-temp">
-                <img src="images/weather_img.png" alt="weather forecast">
-                <span id="temp">32°C</span>
+                <img src="images/weather_img_100.png" alt="weather forecast">
+                <p><span id="temp">9</span>°C</p>
             </div>
 
             <h3>Partially Cloudy</h3>
             
             <div id="wind-speed">
-                <p>Wind Speed: </p>
-                <p>2,5 km/h</p>
+                <p>Speed: </p>
+                <p><span id="w-speed">5</span> km/h</p>
             </div>
 
             <div id="wind-chill">
                 <p>Wind Chill: </p>
-                <p>N/A</p>
+                <p><span id="w-chill"></span></p>
             </div>
         </section>
 
@@ -114,7 +119,7 @@
         <section id="spotlights">
             <section id="spotlight1">
                 <h2>Servientrega</h2>
-                <img src="images/servientrega.jpg" alt="servientrega logo">
+                <img src="images/servientrega_100.jpg" alt="servientrega logo">
                 <h3>"Anywhere, Anytime"</h3>
                 <p class="spotlight-email">
                     info@servientrega.com
@@ -125,7 +130,7 @@
             </section>
             <section id="spotlight2">
                 <h2>Directv</h2>
-                <img src="images/directv.png" alt="directv logo">
+                <img src="images/directv_100.png" alt="directv logo">
                 <h3>"What you really need"</h3>
                 <p class="spotlight-email">
                     info@directv.com
@@ -136,7 +141,7 @@
             </section>
             <section id="spotlight3">
                 <h2>Netlife</h2>
-                <img src="images/netlife.png" alt="directv logo">
+                <img src="images/netlife_100.png" alt="directv logo">
                 <h3>"The speed you asked for"</h3>
                 <p class="spotlight-email">
                     info@netlife.com
@@ -151,7 +156,7 @@
     <footer>
         <section id="upper-footer">
             <section id="logo-name-address">
-                <img src="images/logo_rz.jpg" alt="Pearl of the pacific">
+                <img src="images/chamber_logo.webp" alt="Pearl of the pacific">
 
                 <p>
                     Av Rumichaca, Jose Campos 817<br>
@@ -180,5 +185,6 @@
         </section>
     </footer>
     <script src="js/main.js"></script>
+    <script defer src="js/windchill.js"></script>
 </body>
 </html>
