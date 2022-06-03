@@ -1,0 +1,29 @@
+body{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header, footer{
+    padding: 1.2rem;
+    background-color: lightblue;
+}
+
+picture img{
+    margin-top: 2rem;
+    border: 15px solid lightblue;
+}
+
+picture img[data-src] {
+    filter: blur(0.2em);
+}
+  
+picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+footer{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
