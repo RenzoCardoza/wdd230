@@ -2,22 +2,18 @@
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
 body{
     margin: 0 auto;
     background-color: #C9F0FF;
 }
-
 h2, h3{
     font-family: 'Arvo', serif;
     letter-spacing: 0.06em;
 }
-
 p{
     font-family: 'Nunito', sans-serif;
     letter-spacing: 0.09em; 
 }
-
 #join-banner{
     background-color: #111E34;
     padding: 0.5rem;
@@ -27,7 +23,6 @@ p{
     line-height: 2rem;
     margin: 1rem;
 }
-
 header{
     background-color: #111E34;
     display: grid;
@@ -37,7 +32,6 @@ header{
     margin: 1rem;
     position: relative;
 }
-
 header #logo-img{
     width: 100%;
     grid-column: 1;
@@ -45,7 +39,6 @@ header #logo-img{
     margin-bottom: 1rem;
     margin-left: .7rem;
 }
-
 header button{
     background: transparent;
     border: 1px solid #EDF3DE;
@@ -55,28 +48,23 @@ header button{
     margin-left: 3rem;
     margin-right: .5rem;
 }
-
 #social{
     grid-column: 2;
     justify-self: center;
     margin-top: 2rem;
     margin-left: 1rem;
 }
-
 #social a{
     text-decoration: none;
 }
-
 #social img{
     width: 30%;
     margin: 0.2rem;
 }
-
 nav{
     justify-self: right;
     align-self: center;
 }
-
 header nav ul{
     display: none;
     font-family: 'Nunito', sans-serif;
@@ -85,22 +73,21 @@ header nav ul{
     margin: 0;
     padding: 0;
 }
-
 header nav .open{
     display: block;
 }
-
 header nav ul li a{
     display: block;
     text-decoration: none;
     color: #EDF3DE;
     padding: 0.8rem 2vw;
 }
-
 header nav ul li a:hover{
     background-color: rgba(128, 110, 96, 0.3);
 }
-
+.active{
+    border-top: 2px solid #EDF3DE;
+}
 #date{
     grid-column: 1 / 4;
     grid-row: 2;
@@ -114,7 +101,6 @@ header nav ul li a:hover{
     margin: 0.6rem;
     font-size: 0.8rem;
 }
-
 #burguerBtn span:nth-child(1) {display: block;}
 #burguerBtn span:nth-child(2) {display: none;}
 #burguerBtn.open span:nth-child(1) {display: none;}
@@ -126,27 +112,22 @@ main{
     grid-template-columns: 1fr;
     grid-gap: 15px;
 }
-
 main section{
     border: 1px solid #000;
     background-color: #EFEFF0;
     color: #111E34;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
 main section h2{
     text-shadow: 5px 5px 10px #111E34;
 }
-
 #siteName-action{
     padding: 0;
     position: relative;
 }
-
 #siteName-action img{
     width: 100%;
 }
-
 #welcome{
     font-size: 0.8rem;
     position: absolute;
@@ -158,7 +139,6 @@ main section h2{
     padding: 0.4rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
 #join-button{
     position: absolute;
     bottom: 5px;
@@ -171,115 +151,92 @@ main section h2{
     color: #EDF3DE;
     font-size: 0.6rem;
 }
-
 #join-button a{
     text-decoration: none;  
 }
-
 #event{
     padding: 1.5rem;
     text-align: center;
 }
-
 #event-title{
     margin-top: 0;
 }
-
 #event p{
     line-height: 1.5rem;
     margin-bottom: 0;
 }
-
 #weather{
     padding: 1rem;
     text-align: center;
 }
-
 #img-temp{
     margin-top: 2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 #weather h3{
     text-align: right;
 }
-
 #img-temp p{
     font-size: 1.7rem;
 }
-
 #wind-speed{
     border-top: 1px solid #111E34;
     display: flex;
     justify-content: space-around;
 }
-
 #wind-chill{
     display: flex;
     justify-content: space-around;
 }
-
 #join{
     display: none;
     padding: 1.5rem;
     text-align: center;
     line-height: 1.7rem;
 }
-
 #h-join-button{
     background-color: #111E34;
     padding: 1rem;
     border-radius: 10px;
 }
-
 #news{
     padding: 1rem;
     text-align: center;
 }
-
 #news p{
     line-height: 1.5rem;
 }
-
 #spotlights{
     padding: 1em;
 }
-
 #spotlight1, #spotlight2, #spotlight3{
     padding: 0.8rem;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
 #spotlight1 h2, #spotlight2 h2, #spotlight3 h2{
     margin-top: 0.2rem;
 }
-
 .spotlight-email{
     border-top: 1px solid #111E34;
     margin-bottom: 0;
     padding-top: 0.5rem;
 }
-
 #spotlight1 p, #spotlight2 p, #spotlight3 p{
     margin-top: 0.5rem;
     margin-bottom: 0.4rem;
 }
-
 #spotlight1, #spotlight2{
     margin-top: 0;
 }
-
 #spotlight2{
     border-top: none;
 }
-
 #spotlight3{
     display: none;
 }
-
 footer{
     background-color: #111E34;
     color:#EDF3DE;
@@ -289,33 +246,26 @@ footer{
     text-align: center;
     margin: 1rem;
 }
-
 footer p, footer section{
     font-family: 'Nunito', sans-serif;
     letter-spacing: 0.09em;
 }
-
 #contact-info{
     margin-bottom: 1.5rem;
 }
-
 #contact-info a{
     color: #EDF3DE;
     text-decoration: none;
 }
-
 #site-name{
     margin-bottom: 1rem;
 }
-
 #site-name p{
     margin-top: 0;
 }
-
 #site-name h2{
     margin-bottom: 0.3rem;
 }
-
 #footer-info{
     display: flex;
     flex-direction: column;
@@ -323,7 +273,85 @@ footer p, footer section{
     padding: 1rem;
     text-align: center;
 }
-
 #footer-info p{
     margin-bottom: 0;
+}
+/* discover page*/
+#content{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 20px;
+}
+.local-storage{
+    width: 100%;
+    text-align: center;
+    line-height: 1.4rem;
+}
+.statistics, .graphs{
+    padding: 1rem;
+}
+.statistics{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.8rem;
+}
+.graphs{
+    width: 100%;
+}
+.graphs img{
+    width: 100%;
+    border: 2px solid #111E34;
+}
+.d-images img[data-src]{
+    filter: blur(0.2em);
+}
+.sec-img{
+    padding: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.d-images img{
+    width: 100%;
+    filter: blur(0em);
+    transition: filter 0.5s;
+    border: 2px solid #111E34;
+}
+.population-p{
+    text-align: center;
+    padding: 1rem;
+    border: 2px solid #111E34;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+#projections{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#projections p{
+    margin: 1rem;
+    border: 2px solid #111E34;
+    padding: 1rem;
+}
+.investment{
+    padding: 1rem;
+    width: 100%;
+}
+.investment h2{
+    text-align: center;
+    margin-bottom: 2.3rem;
+}
+#gallery{
+    padding: 1rem;
+    background-color: #EFEFF0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }

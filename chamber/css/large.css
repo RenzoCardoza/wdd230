@@ -3,11 +3,9 @@
     #join-banner{
         font-size: 1.1rem;
     }
-
     header{
         grid-template-columns: repeat(6, 1fr);
     }
-
     nav{
         margin-left: 1.5rem;
         margin-top: 1rem;
@@ -15,129 +13,133 @@
         grid-row: 1;
         justify-self: center;
     }
-
     nav ul li a{
         font-size: 1.5rem;
     }
-
     nav button{
         display: none;
     }
-
     nav ul#primaryNav{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
-
     #social{
         grid-column: 6;
     }
-
     #social img{
         margin-top: 2rem;
         width: 30%;
     }
-
     header #logo-img{
         margin-left: 1rem;
         width: 60%;
         grid-column: 1 / 3;
     }
-
     #date{
         grid-column: 1 / 7;
         font-size: 1.2rem;
     }
-
     main{
         font-size: 1.1rem;
     }
-
     #welcome{
         font-size: 1.7rem;
     }
-
     #join-button{
         font-size: 1.6rem;
     }
-
     #upper-footer{
         margin-left: 4rem;
         margin-right: 5.5rem;
         font-size: 1rem;
     }
-
     #upper-footer p{
         margin-left: 3rem;
         margin-right: 2rem;
     }
-
     #footer-info{
         flex-direction: row;
         justify-content: center;
     }
-
     #footer-info p{
         padding: 0.5rem;
     }
-
-
     main{
         grid-template-columns: 1fr 2fr 1fr;
     }
-
     #event{
         display: block;
         grid-column: 1;
         grid-row: 1;
         font-size: 1.1rem;
     }
-
     #weather{
         grid-column: 1;
         grid-row: 2;
     }
-
     #siteName-action{
         grid-column: 2;
         grid-row: 1 / 3;
     }
-
     #join{
         grid-column: 1;
         grid-row: 3;
     }
-
     #join p{
         font-size: 1.2rem;
     }
-
     #news{
         grid-column: 2;
         grid-row: 3;
     }
-
     #news p{
         margin-bottom: 0;
         margin-top: 2rem;
     }
-
     #spotlights{
         display: block;
     }
-
     #spotlight2{
         border-top: none;
         border-left: 1px solid #000;
     }
-
     #spotlight3{
         display: block;
         border-top: none;
     }
-
     #spotlights{
         grid-column: 3;
         grid-row: 1 / 4;
+    }
+    /*discover page*/
+    #content{
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+    }
+    .local-storage{
+        grid-column: 1 / 3;
+        grid-row: 1;
+        font-size: 1.3rem;
+    }
+    .statistics{
+        font-size: 1.3rem;
+    }
+    .graphs{
+        grid-row: 3;
+    }
+    .population-p{
+        grid-column: 1;
+        grid-row: 4;
+        font-size: 1.1rem;
+    }
+    .investment{
+        grid-row: 5 / 6;
+    }
+    #gallery{
+        grid-column: 2;
+        grid-row: 2 / 6;
+    }
+    .d-images img:hover{
+        box-shadow: 0 0 50px #111E34;
     }
 }
