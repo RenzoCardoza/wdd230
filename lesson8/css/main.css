@@ -34,6 +34,10 @@ tbody tr:nth-child(4) td:nth-child(3){
     background-color: #F7D08A;
 }
 
+tbody tr:nth-child(5) td:nth-child(1){
+    font-style: italic;
+}
+
 tr, td, th{
     padding: 0.8rem;
     border: 0.5px solid #000;
