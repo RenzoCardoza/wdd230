@@ -128,4 +128,34 @@
     .population-p, .sec-img p{
         font-size: 1.1rem;
     }
+    /* Join page*/
+    #join-content{
+        display: block;
+    }
+    #top-legend{
+        font-size: 1.5rem;
+    }
+    #top-field legend, #bottom-field legend{
+        font-size: 1.2rem;
+    }
+    #bottom-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0;
+    }
+    #radio-buttons{
+        text-align: left;
+    }
+    #benefit-cost{
+        width: 60%;
+    }
+    input.submitBtn{
+        margin-left: 1.5%;
+    }
+    /* thankyou page*/
+    #thanks-content{
+        font-size: 1.1rem;
+        display: block;
+    }
 }

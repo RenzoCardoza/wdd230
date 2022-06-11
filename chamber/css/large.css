@@ -142,4 +142,22 @@
     .d-images img:hover{
         box-shadow: 0 0 50px #111E34;
     }
+    /* join page*/
+    #join-content{
+        margin: 0 8rem;
+    }
+    form label.info input{
+        width: 100%;
+    }
+    #top-legend{
+        font-size: 2rem;
+    }
+    input.submitBtn{
+        margin-left: 1%;
+    }
+    /* thankyou page*/
+    #thanks-content{
+        margin: 2rem 5rem;
+        font-size: 1.3rem;
+    }
 }
