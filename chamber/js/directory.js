@@ -1,6 +1,5 @@
 //div element to display data
 let divElem = document.querySelector(".grid");
-
 //asynchronous function
 async function getCompanies(){
     //fetch the data from the json file
@@ -21,6 +20,7 @@ function showcompanies(companies){
         let companyLogo = document.createElement("img");
         companyLogo.setAttribute("src", company.logos.small);
         companyLogo.setAttribute("alt", `${company.name}'s logo`);
+        companyLogo.setAttribute("loading", "lazy");
         //p element for the name 
         let name = document.createElement("h2");
         name.textContent = company.name;
@@ -53,7 +53,6 @@ function showcompanies(companies){
 }
 //default view
 getCompanies();
-
 //add or remove class attributes with DOM
 const gridBtn = document.querySelector("#grid");
 const listBtn = document.querySelector("#list");
