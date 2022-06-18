@@ -1,0 +1,121 @@
+{
+    "companies": [
+        {
+            "name" : "Netlife",
+            "address" : "Parque Empresarial Colón, Edificio Pacific Plaza, Local 02, junto al Banco Guayaquil", 
+            "phone" : "+593-43920000",
+            "website" : "https://www.netlife.ec/",
+            "email" : "info@netlife.net.ec",
+            "logos" : {
+                "small" : "images/netlife_100.png", 
+                "medium": "images/netlife_300.jpg", 
+                "large" :"images/netlife_600.png"
+            },
+            "membership" : "Silver Level"
+        },
+        {
+            "name" : "Servientrega",
+            "address" : "Av. Juan Tanca Marengo y Dr. Camilo Ponce Enrique", 
+            "phone" : "+593-43732000",
+            "website" : "https://www.servientrega.com.ec/",
+            "email" : "info@servientrega.com",
+            "logos" : {
+                "small" : "images/servientrega_100.jpg", 
+                "medium" : "images/servientrega_200.jpg", 
+                "large" : "images/servientrega_400.png"
+            },
+            "membership" : "Gold Level"
+        },
+        {
+            "name" : "Directv",
+            "address" : "Parque Empresarial Colón, Edificio Pacific Plaza, Local 02, junto al Banco Guayaquil", 
+            "phone" : "+593-24010400",
+            "website" : "https://www.directv.com.ec/",
+            "email" : "serviciocliente@directvla.com.ec",
+            "logos" : {
+                "small" : "images/directv_100.png", 
+                "medium" : "images/directv_300.png", 
+                "large" : "images/directv_600.png"
+            },
+            "membership" : "Gold Level"
+        },
+        {
+            "name" : "Almacenes Tia",
+            "address" : "Chimborazo 217 y Luque - Guayaquil", 
+            "phone" : "+593-42598830",
+            "website" : "https://corporativo.tia.com.ec/inicio",
+            "email" : "info@tiacorp.com",
+            "logos" : {
+                "small" : "images/tia_100.jpg", 
+                "medium" : "images/tia_384.jpg", 
+                "large" : "images/tia_512.png"
+            },
+            "membership" : "Bronze Level"
+        },
+        {
+            "name" : "Claro",
+            "address" : "Av. Francisco de Orellana y Alberto Borges - Edificio Centrum", 
+            "phone" : "+593-45004040",
+            "website" : "https://www.claro.com.ec/personas/",
+            "email" : "questions@claro.com.ec",
+            "logos" : {
+                "small" : "images/claro_100.jpg", 
+                "medium" : "images/claro_300.jpg", 
+                "large" : "images/claro_600.jpg"
+            },
+            "membership" : "Silver Level"
+        },
+        {
+            "name" : "Movistar",
+            "address" : "C.C. Albán Borja Calles Ilanes Y Av C J Arosemena, Guayaquil", 
+            "phone" : "+593-999001140",
+            "website" : "https://www.movistar.com.ec/",
+            "email" : "atencioncliente@movistar.es",
+            "logos" : {
+                "small" : "images/movistar_100.png", 
+                "medium" : "images/movistar_300.png", 
+                "large" : "images/movistar_600.png"
+            },
+            "membership" : "Bronze Level"
+        },
+        {
+            "name" : "Celerity",
+            "address" : "Av. Amazonas 4545 y Pereira, Edif. Centro Financiero, of 401", 
+            "phone" : "+593-22989900",
+            "website" : "https://www.celerity.ec/",
+            "email" : "atencioncliente@movistar.es",
+            "logos" : {
+                "small" : "images/celerity_100.jpg", 
+                "medium" : "images/celerity_300.jpg", 
+                "large" : "images/celerity_600.jpg"
+            },
+            "membership" : "Non-Profit Level"
+        },
+        {
+            "name" : "Banco Bolivariano",
+            "address" : "Junín 200 y Panamá, Guayaquil", 
+            "phone" : "+593-42305000",
+            "website" : "https://www.bolivariano.com/",
+            "email" : "info@bolivariano.com",
+            "logos" : {
+                "small" : "images/bolivariano_100.png", 
+                "medium" : "images/bolivariano_300.png", 
+                "large" : "images/bolivariano_600.png"
+            },
+            "membership" : "Gold Level" 
+        },
+        {
+            "name" : "Fybeca",
+            "address" : "Bogotá 606 E/ y Rosendo Aviles y Chambers", 
+            "phone" : "+593-42446520",
+            "website" : "https://www.fybeca.com/",
+            "email" : "serviciocliente@fybeca.com",
+            "logos" : {
+                "small" : "images/fybeca_100.jpg", 
+                "medium" : "images/fybeca_300.jpg", 
+                "large" : "images/fybeca_600.jpg"
+            },
+            "membership" : "Silver Level" 
+        }
+    ] 
+}

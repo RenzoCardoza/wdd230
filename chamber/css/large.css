@@ -1,5 +1,4 @@
-@media only screen and (min-width: 68rem){
-
+@media only screen and (min-width: 67rem){
     #join-banner{
         font-size: 1.1rem;
     }
@@ -143,21 +142,26 @@
         box-shadow: 0 0 50px #111E34;
     }
     /* join page*/
-    #join-content{
-        margin: 0 8rem;
-    }
-    form label.info input{
-        width: 100%;
-    }
-    #top-legend{
-        font-size: 2rem;
-    }
-    input.submitBtn{
-        margin-left: 1%;
-    }
+    #join-content{margin: 0 8rem;}
+    form label.info input{width: 100%;}
+    #top-legend{font-size: 2rem;}
+    input.submitBtn{margin-left: 1%;}
+    #benefit-cost{max-width: 30em;}
     /* thankyou page*/
     #thanks-content{
         margin: 2rem 5rem;
         font-size: 1.3rem;
+    }
+    /* directory page*/
+    .grid {grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));}
+    #directory-title {text-align: left;}
+    .business-card{font-size: 1rem;}
+    /* list view*/
+    .list .business-card h2{font-size: 1.1rem;}
+    .list .business-card p:nth-child(5),
+    .list .business-card p:nth-child(3){
+        display: block;
+        width: 12em;
+        overflow-wrap: break-word;
     }
 }

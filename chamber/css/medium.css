@@ -140,7 +140,7 @@
     }
     #bottom-content{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         margin-top: 0;
     }
@@ -157,5 +157,22 @@
     #thanks-content{
         font-size: 1.1rem;
         display: block;
+    }
+    /* directory page*/
+    .business-card{font-size: 0.9rem;}
+    /* grid view*/
+    .grid{grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));}
+    /* list view*/
+    .list .business-card p:nth-child(3), 
+    .list .business-card p:nth-child(5){display: none;}
+    .list .business-card{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .list .business-card h2{width: 7.5rem; margin-top: 0.85rem;}
+    .list .business-card p:nth-child(1){
+        width: 15rem;
+        overflow-wrap: break-word;
     }
 }

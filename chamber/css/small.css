@@ -457,3 +457,51 @@ input.submitBtn{
     font-family: 'Nunito', sans-serif;
     letter-spacing: 0.09em;
 }
+/* directory page*/
+#directory-content {display: block;}
+#directory-title{
+    text-align: center;
+    padding: .75rem;
+    line-height: 2.2rem;
+}
+.menu{
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.menu button{
+    padding: .5rem .70rem;
+    border-color: #111E34;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background: #EFEFF0;
+}
+.menu button#grid{
+    background: rgba(0, 0, 0, 0.35);
+}
+/* grid view */
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+.business-card{
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+}
+.grid .company-name {display: none;}
+/* list view */
+.list .company-name {display: block;}
+.list img {display: none;}
+.list .business-card {text-align: left;}
+.list .business-card p{
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+.list .company-name {font-size: 1rem;}
+.list .business-card:nth-child(2), .list .business-card:nth-child(3),
+.list .business-card:nth-child(4), .list .business-card:nth-child(5),
+.list .business-card:nth-child(6), .list .business-card:nth-child(7),
+.list .business-card:nth-child(8), .list .business-card:nth-child(9){border-top: none;}
+.list .business-card h2 {margin-top: 0;}
