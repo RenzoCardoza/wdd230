@@ -20,7 +20,6 @@ function showcompanies(companies){
         let companyLogo = document.createElement("img");
         companyLogo.setAttribute("src", company.logos.small);
         companyLogo.setAttribute("alt", `${company.name}'s logo`);
-        companyLogo.setAttribute("loading", "lazy");
         //p element for the name 
         let name = document.createElement("h2");
         name.textContent = company.name;
