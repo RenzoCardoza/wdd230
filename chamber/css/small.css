@@ -207,7 +207,7 @@ main section h2{
     text-align: center;
 }
 #news p{
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 #spotlights{
     padding: 1em;
@@ -281,7 +281,7 @@ footer p, footer section{
     padding: 0.5rem;
 }
 #copyright-weather a{
-    color: #806E60;
+    color: #EDF3DE;
 }
 /* discover page*/
 #content{
