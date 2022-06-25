@@ -47,9 +47,9 @@
     <main>
         <section id="siteName-action">
             <picture>
-                <source media="(min-width: 38.5em) and (max-width: 67.5em)" srcset="images/wdd230_org_medium.jpg">
-                <source media="(min-width: 68em)" srcset="images/wdd230_org_large.jpg">
-                <img src="images/wdd230_org_small.jpg" alt="business meeting">
+                <source media="(min-width: 37.5em) and (max-width: 65.5em)" srcset="images/guayaquil_900_medium.jpg">
+                <source media="(min-width: 66em)" srcset="images/guayaquil_900_large_4.jpg">
+                <img src="images/guayaquil_900_small.jpg" alt="guayaquil city">
             </picture>
             <!-- <img src="images/Guayaquil-Ecuador.jpg" alt="Guayaquil city"> -->
             <h2 id="welcome">Welcome to Pearl of the Pacific</h2>
@@ -62,22 +62,22 @@
             <p>
                 Join us for the grand opening of the brand new
                 Watch World franchise. Wednesday at 3:00 PM. 
-                <a href="#">more info...</a>
+                <a href="https://www.eluniverso.com/ultimas-noticias/" target="_blank">more info...</a>
             </p>
         </section>
 
         <section id="weather">
             <h2>Weather</h2>
             <div id="img-temp">
-                <img src="images/weather_img_100.png" alt="weather forecast">
-                <p><span id="temp">9</span>°C</p>
+                <!-- <img src="images/weather_img_100.png" alt="weather forecast"> -->
+                <p id="temperature"><span id="temp"></span>°C</p>
             </div>
 
-            <h3>Partially Cloudy</h3>
+            <h3 id="condition"></h3>
             
             <div id="wind-speed">
                 <p>Speed: </p>
-                <p><span id="w-speed">5</span> km/h</p>
+                <p><span id="w-speed"></span> km/h</p>
             </div>
 
             <div id="wind-chill">
@@ -104,8 +104,7 @@
                 eveniet similique nam atque illum facere harum maiores 
                 delectus consequatur laboriosam doloribus temporibus! 
                 Facilis dicta earum repudiandae voluptas voluptatibus 
-                enim voluptate assumenda quaerat laborum magnam a nam 
-                consequatur repellat ut
+                enim voluptate
             </p>
         </section>
 
@@ -118,7 +117,7 @@
                     info@servientrega.com
                 </p>
                 <p>
-                    +593 4-232-1223 | <a href="#">Website</a>
+                    +593 4-232-1223 | <a href="https://www.servientrega.com.ec/" target="_blank">Website</a>
                 </p>
             </section>
             <section id="spotlight2">
@@ -129,7 +128,7 @@
                     info@directv.com
                 </p>
                 <p>
-                    +593 4-412-5363 | <a href="#">Website</a>
+                    +593 4-412-5363 | <a href="https://www.directv.com.ec/" target="_blank">Website</a>
                 </p>
             </section>
             <section id="spotlight3">
@@ -140,7 +139,7 @@
                     info@netlife.com
                 </p>
                 <p>
-                    +593 4-468-7138 | <a href="#">Website</a>
+                    +593 4-468-7138 | <a href="https://www.netlife.ec/" target="_blank">Website</a>
                 </p>
             </section>
         </section>
@@ -167,6 +166,10 @@
             </section>
         </section>
 
+        <section id="copyright-weather">
+            <p>Weather Information is powered by <a href="https://openweathermap.org/">OpenWeatherMap</a></p> 
+        </section>
+        
         <section id="footer-info">
             <section id="copyright-names">
                 <p>&copy; <span id="year"></span> Pearl of the Pacific</p>
@@ -177,6 +180,7 @@
         </section>
     </footer>
     <script defer src="js/main.js"></script>
+    <script defer src="js/weather-api.js"></script>
     <script defer src="js/windchill.js"></script>
 </body>
 </html>

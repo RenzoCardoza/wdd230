@@ -155,7 +155,7 @@ main section h2{
     text-decoration: none;  
 }
 #event{
-    padding: 1.5rem;
+    padding: 1.2rem;
     text-align: center;
 }
 #event-title{
@@ -177,6 +177,7 @@ main section h2{
 }
 #weather h3{
     text-align: right;
+    margin-bottom: 2%;
 }
 #img-temp p{
     font-size: 1.7rem;
@@ -275,6 +276,12 @@ footer p, footer section{
 }
 #footer-info p{
     margin-bottom: 0;
+}
+#copyright-weather{
+    padding: 0.5rem;
+}
+#copyright-weather a{
+    color: #806E60;
 }
 /* discover page*/
 #content{
