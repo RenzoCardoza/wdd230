@@ -5,11 +5,9 @@ function toggleMenu(){
 }
 //add an event listener to the button to call the function toggle menu
 document.querySelector("#burguerBtn").addEventListener("click", toggleMenu);
-//get the current date
+//get the current date and year to place it in the footer
 const dt = new Date();
-//get the current year
 const year = dt.getFullYear();
-//place the year in the footer
 document.querySelector("#year").textContent = year;
 //get the date from last modified and place it in the span tag
 let lmodified = document.lastModified;
@@ -26,26 +24,30 @@ if (dt.getDay() == 1 || dt.getDay() == 2){
 }else{
     joinBanner.style.display = "none";
 }
-//use local storage to obtain the number of visits / use DOM to get the span tags
-const visitElem = document.querySelector("#n-visits");
-const daysElem = document.querySelector("#n-days");
-let visitNum = Number(window.localStorage.getItem("visit-ls"));
-let miliseconds = Number(window.localStorage.getItem("miliseconds"));
-//if less than 0 show first visit; otherwise, show the number of visits
-if (visitNum !== 0){
-    visitElem.textContent = visitNum;
-} else{
-    visitElem.textContent = "This is your first visit!";
+//add the companies to the spotlights
+const spotlight1 = document.querySelector("spotlight1");
+const spotlight2 = document.querySelector("spotlight2");
+const spotlight3 = document.querySelector("spotlight3");
+//asynchronous function
+async function getCompanies(){
+    //fetch the data from the json file
+    const response = await fetch("json/data.json");
+    if (response.ok){
+        const data = await response.json();
+        displaySpotlights(data.companies);
+    }
 }
-//calculate the days if the miliseconds obtained are different than 0
-if (miliseconds !== 0){
-    let daysNum = Math.round((Date.now() - miliseconds) / 86400000);
-    daysElem.textContent = daysNum;
-} else{
-    daysElem.textContent = 0;
+//function to display 3 random companies to the home page (gold or silver)
+function displaySpotlights(companies){
+    let importantCompanies = [];
+    companies.forEach(company => {
+        //if the company membership is gold or silver proceed
+        if (company.membership == "Gold Level" || company.membership == "Silver Level"){
+            importantCompanies.push(company);
+            console.log(company);
+        }
+    });
+    //display to the page 3 random companies
+    
 }
-//increment by one and save it into the localstorage
-visitNum++;
-localStorage.setItem("visit-ls", visitNum);
-//store the current date into the local storage in miliseconds
-localStorage.setItem("miliseconds", Date.now());
+getCompanies();

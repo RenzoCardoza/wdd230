@@ -11,7 +11,8 @@
                 "medium": "images/netlife_300.jpg", 
                 "large" :"images/netlife_600.png"
             },
-            "membership" : "Silver Level"
+            "membership" : "Silver Level",
+            "slogan": "The speed you asked for"
         },
         {
             "name" : "Servientrega",
@@ -24,7 +25,8 @@
                 "medium" : "images/servientrega_200.jpg", 
                 "large" : "images/servientrega_400.png"
             },
-            "membership" : "Gold Level"
+            "membership" : "Gold Level",
+            "slogan" : "Anywhere, Anytime"
         },
         {
             "name" : "Directv",
@@ -37,7 +39,8 @@
                 "medium" : "images/directv_300.png", 
                 "large" : "images/directv_600.png"
             },
-            "membership" : "Gold Level"
+            "membership" : "Gold Level",
+            "slogan" : "What you really need"
         },
         {
             "name" : "Almacenes Tia",
@@ -50,7 +53,8 @@
                 "medium" : "images/tia_384.jpg", 
                 "large" : "images/tia_512.png"
             },
-            "membership" : "Bronze Level"
+            "membership" : "Bronze Level",
+            "slogan" : "Quality and Economy"
         },
         {
             "name" : "Claro",
@@ -63,7 +67,8 @@
                 "medium" : "images/claro_300.jpg", 
                 "large" : "images/claro_600.jpg"
             },
-            "membership" : "Silver Level"
+            "membership" : "Silver Level",
+            "slogan" : "To you first"
         },
         {
             "name" : "Movistar",
@@ -76,7 +81,8 @@
                 "medium" : "images/movistar_300.png", 
                 "large" : "images/movistar_600.png"
             },
-            "membership" : "Bronze Level"
+            "membership" : "Bronze Level",
+            "slogan" : "Shared is better"
         },
         {
             "name" : "Celerity",
@@ -89,7 +95,8 @@
                 "medium" : "images/celerity_300.jpg", 
                 "large" : "images/celerity_600.jpg"
             },
-            "membership" : "Non-Profit Level"
+            "membership" : "Non-Profit Level",
+            "slogan" : "Always more"
         },
         {
             "name" : "Banco Bolivariano",
@@ -102,7 +109,8 @@
                 "medium" : "images/bolivariano_300.png", 
                 "large" : "images/bolivariano_600.png"
             },
-            "membership" : "Gold Level" 
+            "membership" : "Gold Level",
+            "slogan" : "Together, invencible" 
         },
         {
             "name" : "Fybeca",
@@ -115,7 +123,8 @@
                 "medium" : "images/fybeca_300.jpg", 
                 "large" : "images/fybeca_600.jpg"
             },
-            "membership" : "Silver Level" 
+            "membership" : "Silver Level",
+            "slogan" : "We care for you" 
         }
     ] 
 }
