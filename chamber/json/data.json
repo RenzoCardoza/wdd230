@@ -33,7 +33,7 @@
             "address" : "Parque Empresarial Colón, Edificio Pacific Plaza, Local 02, junto al Banco Guayaquil", 
             "phone" : "+593-24010400",
             "website" : "https://www.directv.com.ec/",
-            "email" : "serviciocliente@directvla.com.ec",
+            "email" : "serviciocliente@directvla.ec",
             "logos" : {
                 "small" : "images/directv_100.png", 
                 "medium" : "images/directv_300.png", 
@@ -89,13 +89,13 @@
             "address" : "Av. Amazonas 4545 y Pereira, Edif. Centro Financiero, of 401", 
             "phone" : "+593-22989900",
             "website" : "https://www.celerity.ec/",
-            "email" : "atencioncliente@movistar.es",
+            "email" : "clientes@celerity.ec",
             "logos" : {
                 "small" : "images/celerity_100.jpg", 
                 "medium" : "images/celerity_300.jpg", 
                 "large" : "images/celerity_600.jpg"
             },
-            "membership" : "Non-Profit Level",
+            "membership" : "Silver Level",
             "slogan" : "Always more"
         },
         {
