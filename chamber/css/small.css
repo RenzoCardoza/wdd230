@@ -512,3 +512,25 @@ input.submitBtn{
 .list .business-card:nth-child(6), .list .business-card:nth-child(7),
 .list .business-card:nth-child(8), .list .business-card:nth-child(9){border-top: none;}
 .list .business-card h2 {margin-top: 0;}
+/* contact us page*/
+#contact-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+#contact-content h1{
+    text-align: center;
+    background-color: #111E34;
+    padding: 2.5rem;
+    color: #EDF3DE;
+}
+#general-contact, #member-contact, #form-contact, #sponsorship, #visit-us {padding: 1rem;}
+#alex-quote, #general-contact h3 {text-align: center;}
+#member-contact p, #member-contact p, #sponsorship p {line-height: 1.4rem;}
+#visit-us {display: none;}
+#or {text-align: center;}
+#radio-btns {text-align: left;}
+#member-question {
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 0.09em;
+}
