@@ -165,9 +165,10 @@
         overflow-wrap: break-word;
     }
     /* contact us page*/
+    #general-contact, #member-contact, #form-contact, #sponsorship, #visit-us {font-size: 1.1rem;}
     #contact-content {grid-template-columns: repeat(4, 1fr);}
     #contact-content h1 {grid-column: 1 / 5; grid-row: 1;}
-    #subheading {grid-column: 1 / 5; grid-row: 2; font-size: 2rem;}
+    #subheading {grid-column: 1 / 5; grid-row: 2; font-size: 2rem; text-align: center;}
     #general-contact {grid-column: 1 / 3; grid-row: 3;}
     #member-contact {grid-column: 3 / 5; grid-row: 3;}
     #visit-us {

@@ -524,8 +524,10 @@ input.submitBtn{
     padding: 2.5rem;
     color: #EDF3DE;
 }
-#general-contact, #member-contact, #form-contact, #sponsorship, #visit-us {padding: 1rem;}
-#alex-quote, #general-contact h3 {text-align: center;}
+#general-contact, #member-contact, #form-contact, #sponsorship, #visit-us {padding: 1rem; font-size: 0.9rem;}
+#general-contact h2 {margin-bottom: 2rem;}
+#alex-quote, #general-contact h3, #alex-contact {text-align: center;}
+#alex-quote {line-height: 1.4rem; margin-bottom: 1.5rem;}
 #member-contact p, #member-contact p, #sponsorship p {line-height: 1.4rem;}
 #visit-us {display: none;}
 #or {text-align: center;}
