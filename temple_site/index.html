@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Temple Inn & Suites | Home</title>
+	<meta name="description" content="Temple Inn & Suites home page by Renzo Cardoza 
+	in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+
+	<link rel="icon" href="temple_icon.ico">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Tiro+Bangla:ital@1&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/small.css">
+	<link rel="stylesheet" href="css/medium.css">
+	<link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+	<header>
+		<section id="upper-header">
+			<div id="logo-container">
+				<picture>
+					<img src="images/temple_inn_logo_100.jpg" alt="temple inn and suites logo">
+				</picture>		
+			</div>
+			<h1 id="top-title">Temple Inn & Suites</h1>
+
+			<section id="social">
+				<a href="https://www.facebook.com/" target="_blank"><img src="images/facebook_35.png" alt="facebook icon"></a>
+				<a href="https://twitter.com/?lang=es" target="_blank"><img src="images/twitter_35.png" alt="twitter icon"></a>
+			</section>
+		</section>
+		<nav>
+			<div id="button">
+				<button id="burguerBtn"><span>&#9776;</span><span>X</span></button>
+			</div>
+			<ul id="primaryNav">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="#">Temples</a></li>
+				<li><a href="#">Reservation</a></li>
+				<li><a href="#">Services</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<div id="date"></div>
+
+		<section id="action-call">
+			<h2>
+				Stay near your favorite temple around the world
+			</h2>
+			<section id="img-desc">
+				<picture>
+					<img src="images/placeholder_300.png" data-src="images/temples/temple_guayaquil_400.jpg" alt="an image of a temple">
+				</picture>
+
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+					Aspernatur, recusandae. Veritatis ipsa minima nobis dignissimos 
+					velit dolor ducimus minus, alias dolorum sed saepe numquam 
+					reprehenderit deleniti cupiditate architecto consectetur magnam 
+					maxime. Repellat aliquid alias corporis culpa possimus deleniti eveniet, 
+					magni perspiciatis nobis est neque. Nostrum optio voluptatem doloribus  
+				</p>
+			</section>
+			<a href="#"><h3 id="action-button">Reserve Now!</h3></a>
+		</section>
+
+		<section id="most-visited">
+			<h2>Most Visited Temples</h2>
+
+			<article id="most-temples">
+				<section id="temple1">
+					<picture>
+						<img src="images/placeholder_300.png" data-src="images/temples/temple_guayaquil_400.png" alt="temple image">
+						<h4 class="temple-location">rererererer<h4>
+					</picture>
+				</section>
+				<section id="temple2">
+					<picture>
+						<img src="images/placeholder_300.png" data-src="images/temples/temple_guayaquil_400.png" alt="temple image">
+						<h4 class="temple-location">rererererer<h4>
+					</picture>
+				</section>
+				<section id="temple3">
+					<picture>
+						<img src="images/placeholder_300.png" data-src="images/temples/temple_guayaquil_400.png" alt="temple image">
+						<h4 class="temple-location">rererererer<h4>
+					</picture>	
+				</section>		
+			</article>
+		</section>
+
+		<section id="weather">
+			<h2>Weather</h2>
+
+			<section id="img-temp">
+				<div id="icon"></div>
+				<p><span id="temperature"></span><span>°C</p>
+			</section>
+
+			<p id="desc">weather description</p>
+			<section id="humidity-wind-chill">
+				
+				<section id="w-humidity">
+					<p>Humidity: </p>
+					<p><span id="humidity"></span>%</p>
+				</section>
+
+				<section id="wind">
+					<p>Wind Speed: </p>
+					<p><span id="wind-speed"></span>Km/h</p>
+				</section>
+
+				<section id="feels">
+					<p>Feels Like: </p>
+					<p><span id="feels-like"></span>°C</p>
+				</section>
+			</section>
+		</section>
+
+		<section id="forecast">
+			<h2>Weather Forecast</h2>
+			<section id="days"></section>
+		</section>
+	</main>
+
+	<footer>
+		<picture>
+			<img src="images/temple_inn_logo_100.jpg" alt="temple inn logo">
+		</picture>
+		<section id="upper-footer">
+			<section id="information">
+				<p>
+					4800 Montgomery Ln #300, Bethesda, MD 20814<br>
+					Bethseda, USA.
+				</p>
+			</section>
+
+			<section id="contact-info">
+				<p>contact@templeinn.com</p>
+				<p>+55 (11) 91716990</p>
+				<p>
+					<a href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814,+EE.+UU./@38.9832518,-77.0955318,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318">
+						📍 Location Map
+					</a>
+				</p>
+			</section>
+		</section>
+		<section id="api-credit">
+			<p>Weather Information is powered by <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
+		</section>
+		<section id="lower-footer">
+			<section id="copyright-name">
+				<p>&copy; <span id="year"></span> All rights reserved</p>
+				<p>Renzo Cardoza</p>
+			</section>
+			<section id="lower2-footer">
+				<p>WDD 230 Final Project</p>
+				<p>Last Modification: <span id="lmodified"></span></p>
+			</section>
+		</section>
+	</footer>
+	<script defer src="js/main.js"></script>
+	<script defer src="js/weather.js"></script>
+</body>
+</html>

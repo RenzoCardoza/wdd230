@@ -1,0 +1,113 @@
+{
+    "temples" : [
+        {
+            "name" : "Guayaquil, Ecuador Temple",
+            "address" : "Calle Rosendo Maridueña 8845 Urdesa Norte — Guayaquil, Ecuador",
+            "phone" : "(593) 4-371-8100",
+            "email" : "guayaquiltemple@lds.org",
+            "photos" : {
+                "small" : "images/temples/temple_guayaquil_400.jpg",
+                "medium" : "images/temples/temple_guayaquil_600.jpg",
+                "large" : "images/temples/temple_guayaquil_800.jpg"
+            },
+            "services" : ["Clothing rental", "Patron Housing", "Distribution Center"],
+            "closures" : ["12/08/22", "31/10/22 - 21/11/22"],
+            "milestones" : {
+                "announced" : "31 March 1982",
+                "groundbreak" : "10 August 1996",
+                "dedication" : "1 August 1999"
+            }
+        },
+        {
+            "name" : "São Paulo Brazil Temple",
+            "address" : "Av. Prof. Francisco Morato, 2390 Caxingui São Paulo - SP, Brazil",
+            "phone" : "(55) 11-3723-7600",
+            "email" : "saopaulotemple@lds.org",
+            "photos" : {
+                "small" : "images/temples/sao_paulo_temple_300.jpg",
+                "medium" : "images/temples/sao_paulo_temple_500.jpg",
+                "large" : "images/temples/sao_paulo_temple_700.jpg"
+            },
+            "services" : ["Clothing rental", "Patron Housing", "Distribution Center nearby"],
+            "closures" : ["01/08/22 - 15/08/22", "07/09/22", "01/10/22", "24/12/22", "31/12/22"],
+            "milestones" : {
+                "announced" : "1 March 1975",
+                "groundbreak" : "20 March 1976",
+                "dedication" : "30 Octuber 1978",
+                "rededication" : "22 February 2004"
+            }
+        },
+        {
+            "name" : "Campinas Brazil Temple",
+            "address" : "Rua James Esdras Faust, 400 Barrio Notre Dame Campinas - SP, Brazil.",
+            "phone" : "(55) 19-2102-5800",
+            "email" : "campinastemple@lds.org",
+            "photos" : {
+                "small" : "images/temples/campinas_temple_300.jpg",
+                "medium" : "images/temples/campinas_temple_500.jpg",
+                "large" : "images/temples/campinas_temple_700.jpg"
+            },
+            "services" : ["Clothing rental", "Patron Housing", "Cafeteria", "Distribution Center nearby"],
+            "closures" : ["19/09/22 - 28/11/22", "24/12/22", "31/12/22"],
+            "milestones" : {
+                "announced" : "3 April 1997",
+                "groundbreak" : "1 May 1998",
+                "dedication" : "17 May 2002"
+            }
+        },
+        {
+            "name" : "Barranquilla Colombia Temple",
+            "address" : "Carrera 46 via al mar pr 107 Barranquilla, Colombia",
+            "phone" : "(57) 5-310-0200",
+            "email" : "barranquillatemple@lds.org",
+            "photos" : {
+                "small" : "images/temples/barranquilla_temple_300.jpg",
+                "medium" : "images/temples/barranquilla_temple_500.jpg",
+                "large" : "images/temples/barranquilla_temple_700.jpg"
+            },
+            "services" : ["Distribution Center nearby"],
+            "closures" : ["01/10/22","17/10/22 - 31/10/22", "08/12/22", "24/12/22"],
+            "milestones" : {
+                "announced" : "1 Octuber 2011",
+                "groundbreak" : "20 February 2016",
+                "dedication" : "9 December 2018"
+            }
+        },
+        {
+            "name" : "Provo City Center Temple",
+            "address" : "50 South University Ave Provo UT 84601 United States",
+            "phone" : "(1) 801-343-2700",
+            "email" : "provocitytemple@lds.org",
+            "photos" : {
+                "small" : "images/temples/provo_city_temple_300.jpg",
+                "medium" : "images/temples/provo_city_temple_500.jpg",
+                "large" : "images/temples/provo_city_temple_700.jpg"
+            },
+            "services" : ["Clothing rental", "Distribution Center nearby"],
+            "closures" : ["01/10/22","23/11/22", "24/11/22", "28/11/22", "24/12/22"],
+            "milestones" : {
+                "announced" : "1 Octuber 2011",
+                "groundbreak" : "12 May 2012",
+                "dedication" : "20 March 2016"
+            }
+        },
+        {
+            "name" : "Arequipa Peru Temple",
+            "address" : "Calle Cusco 380 Carmen Alto Distrito De Cayma Arequipa, Arequipa, Peru",
+            "phone" : "(51) 54-640-300",
+            "email" : "arequipatemple@lds.org",
+            "photos" : {
+                "small" : "images/temples/arequipa_temple_300.jpg",
+                "medium" : "images/temples/arequipa_temple_500.jpg",
+                "large" : "images/temples/arequipa_temple_700.jpg"
+            },
+            "services" : ["Distribution Center nearby"],
+            "closures" : ["28/07/22", "01/08/22", "01/10/22", "24/12/22", "31/12/22"],
+            "milestones" : {
+                "announced" : "6 Octuber 2012",
+                "groundbreak" : "4 March 2017",
+                "dedication" : "15 December 2019"
+            }
+        }
+    ]
+}
