@@ -23,19 +23,22 @@
         display: flex;
         justify-content: space-evenly;
         font-size: 1.2rem;
-        background-color: #163B67;
+        background-color: #030051;
         margin-bottom: 0;
     }
     nav ul li a{
-        color: #E6E4D5;
+        color: #E2F3EC;
     }
     nav ul li{
         margin: 0;
         width: 100%;
     }
     nav ul li:hover{
-        background-color: #E6E4D5;
-        color: #163B67;
+        background-color: #E2F3EC;
+        color: #0F084B;
+    }
+    nav ul li a:hover{
+        color: #0F084B;
     }
     main{
         display: grid;
@@ -45,11 +48,14 @@
     #date{
         grid-column: 1 / 7;
         grid-row: 1;
+        font-size: 1.3rem;
     }
     #action-call{
         grid-column: 1 / 7;
         grid-row: 2;
     }
+    #action-call h2{font-size: 2.5rem;}
+    #action-button{font-size: 1.5rem;}
     #img-desc{
         display: flex;
         justify-content: space-around;
@@ -67,8 +73,17 @@
     #most-visited{
         grid-column: 3 / 7;
     }
+    #most-temples{
+        align-items: center;
+    }
     #temple3{
         display: block;
+    }
+    #w-humidity, #wind, #feels{
+        font-size: 1.1rem;
+    }
+    #humidity-wind-chill{
+        margin-top: 0;
     }
     #forecast{
         display: flex;
@@ -104,5 +119,8 @@
     #contact-info p{
         margin-left: 1rem;
         margin-right: 1rem;
+    }
+    #api-credit{
+        font-size: 1.1rem;
     }
 }

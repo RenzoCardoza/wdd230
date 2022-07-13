@@ -25,12 +25,16 @@
         grid-column: 1 / 2;
         grid-row: 4;
     }
+    #humidity-wind-chill{
+        margin-top: 2rem;
+    }
     #forecast{
         grid-column: 2 / 4;
         grid-row: 4;
     }
     #most-temples{
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
     }
     #lower-footer{

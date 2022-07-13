@@ -1,14 +1,14 @@
 {
     "temples" : [
         {
-            "name" : "Guayaquil, Ecuador Temple",
+            "name" : "Guayaquil Ecuador Temple",
             "address" : "Calle Rosendo Maridueña 8845 Urdesa Norte — Guayaquil, Ecuador",
             "phone" : "(593) 4-371-8100",
             "email" : "guayaquiltemple@lds.org",
             "photos" : {
-                "small" : "images/temples/temple_guayaquil_400.jpg",
-                "medium" : "images/temples/temple_guayaquil_600.jpg",
-                "large" : "images/temples/temple_guayaquil_800.jpg"
+                "small" : "images/temples/guayaquil_temple_300.jpg",
+                "medium" : "images/temples/guayaquil_temple_500.jpg",
+                "large" : "images/temples/guayaquil_temple_700.jpg"
             },
             "services" : ["Clothing rental", "Patron Housing", "Distribution Center"],
             "closures" : ["12/08/22", "31/10/22 - 21/11/22"],
