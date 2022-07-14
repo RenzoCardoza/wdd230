@@ -13,9 +13,16 @@ async function getTemples(){
 //function to display the temples into cards
 function showTemples(temples){
     temples.forEach(temple => {
-        //element to represent the temple card
+        //container of the card front and back
         const card = document.createElement("div");
-        card.classList.add("temple-card");
+        card.classList.add("card");
+        //element to represent the temple card
+        const templeCard = document.createElement("div");
+        templeCard.classList.add("temple-card");
+        ////FRONT SIDE
+        const frontCard = document.createElement("div");
+        frontCard.classList.add("card-face")
+        frontCard.classList.add("temple-card-front");
         //temple image 
         const templeContainer = document.createElement("img");
         templeContainer.setAttribute("src", temple.photos.small);
@@ -23,16 +30,53 @@ function showTemples(temples){
         //element for the name of the temple
         const nameElem = document.createElement("p");
         nameElem.textContent = temple.name;
+        //container for buttons
+        const btnContainer = document.createElement("div");
+        btnContainer.classList.add("btn-container");
         //like button element
         const likeBtn = document.createElement("button");
         likeBtn.classList.add("likeBtn");
         likeBtn.textContent = "Like";
+        btnContainer.appendChild(likeBtn);
+        //reserve now button
+        const reserveBtn = document.createElement("button");
+        reserveBtn.classList.add("reserveBtn");
+        reserveBtn.textContent = "Reserve Now";
+        btnContainer.appendChild(reserveBtn);
+        //BACK SIDE
+        const backCard = document.createElement("div");
+        backCard.classList.add("card-face");
+        backCard.classList.add("temple-card-back");
+        //temple info
+        const templeInfo = document.createElement("div");
+        templeInfo.classList.add("temple-info");
+        const name2Elem = document.createElement("h3");
+        name2Elem.textContent = temple.name;
+        const address = document.createElement("p");
+        address.innerHTML = `<strong>Address: </strong>${temple.address}`;
+        const phone = document.createElement("p");
+        phone.innerHTML = `<strong>Phone: </strong> ${temple.phone}`;
+        const dedication =  document.createElement("p");
+        dedication.innerHTML = `<strong>Dedication: </strong>${temple.milestones.dedication}`;
 
-        card.appendChild(templeContainer);
-        card.appendChild(nameElem);
-        card.appendChild(likeBtn);
+        templeInfo.appendChild(name2Elem);
+        templeInfo.appendChild(address);
+        templeInfo.appendChild(phone);
+        templeInfo.appendChild(dedication);
+        templeInfo.appendChild(btnContainer);
 
+        //append front side
+        frontCard.appendChild(templeContainer);
+        frontCard.appendChild(nameElem);
+        //append back side
+        backCard.appendChild(templeInfo);
+
+        templeCard.appendChild(frontCard);
+        templeCard.appendChild(backCard);
+        card.appendChild(templeCard);
+        
         divElem.appendChild(card);
+
     });
 }
-getTemples();
+getTemples(); 

@@ -9,7 +9,7 @@ h1, h2, h3, h4, #date{
     letter-spacing: 0.06rem;
     color: #030051;
 }
-p, ul, #action-button{
+p, ul, #action-button, .likeBtn, .reserveBtn{
     font-family: 'Edu NSW ACT Foundation', cursive;
     letter-spacing: 0.07rem;
 }
@@ -177,12 +177,64 @@ footer{
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.temple-card{
-    padding: 1rem;
+.card{
+    width: 400px;
+    height: 350px;
     margin: 1rem;
+    padding: 1rem;
+}
+.temple-card{
     text-align: center;
     background-color: #E2F3EC;
-}
-.temple-card img{
     width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+.card:hover .temple-card{
+    transform: rotateY(180deg);
+}
+.card-face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    overflow: hidden;
+}
+.temple-card-front{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.temple-card-front p{
+    font-size: 1.3rem;
+}
+.temple-card-back{
+    transform: rotateY(180deg);
+    padding: 1rem;
+    background-color: #E6E4D5;
+    font-size: .9rem;
+}
+.temple-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+.card-face .temple-card-front img{
+    width: 100%;
+}
+.likeBtn, .reserveBtn{
+    width: 100%;
+    background: transparent;
+    padding: .5rem;
+}
+.btn-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: .75rem;
 }
