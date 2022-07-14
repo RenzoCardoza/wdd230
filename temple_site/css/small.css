@@ -168,3 +168,21 @@ footer{
 #api-credit{padding: .75rem;}
 #api-credit a{color: #E2F3EC;}
 #lower-footer{border-top: 1px solid #E2F3EC;}
+/* temples page */
+#temple-content{
+    display: block;
+}
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.temple-card{
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    background-color: #E2F3EC;
+}
+.temple-card img{
+    width: 100%;
+}

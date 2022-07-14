@@ -1,3 +1,6 @@
+//current date
+const fullDate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(dt);
+document.querySelector("#date").innerHTML = `${fullDate}`;
 //get the elements for the temples
 const temple1 = document.querySelector("#temple1");
 const temple2 = document.querySelector("#temple2");
