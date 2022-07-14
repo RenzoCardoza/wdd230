@@ -110,6 +110,9 @@
         font-size: 1.1em;
         line-height: 1.6rem;
     }
+    #information{
+        margin-left: 3rem;
+    }
     #contact-info{
         display: flex;
         justify-content: space-around;

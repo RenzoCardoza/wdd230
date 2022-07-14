@@ -4,37 +4,30 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 body{background-color: #C6D4FA;}
-
 h1, h2, h3, h4, #date{
     font-family: 'Tiro Bangla', serif;
     letter-spacing: 0.06rem;
     color: #030051;
 }
-
 p, ul, #action-button{
     font-family: 'Edu NSW ACT Foundation', cursive;
     letter-spacing: 0.07rem;
 }
-
 header{
     padding: .50rem;
     background-color: #0F084B;
 }
-
 #logo-container{max-width: 100px;}
-
 #logo-container img{
     width: 100%;
     border: 2px solid #030051;
     border-radius: 4px;
 }
-
 #upper-header{
     display: flex;
     justify-content: space-around;
     margin-bottom: 1rem;
 }
-
 #upper-header h1{
     align-self: center;
     font-size: 1.4rem;
@@ -42,37 +35,29 @@ header{
     color: #E2F3EC;
     max-width: 7em;
 }
-
 #social{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-
 nav ul{
     display: none;
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-
 a{text-decoration: none;}
-
 nav .open{display: block;}
-
 nav ul li{
     list-style: none;
     text-align: center;
     padding: 0.75rem;
 }
-
 nav ul li a{
     display: block;
     color: #E2F3EC;
 }
-
 .active{border-top: 4px solid #E2F3EC; text-decoration: underline;}
-
 #button{
     display: flex;
     justify-content: center;
@@ -82,7 +67,6 @@ nav ul li a{
     background-color: #030051;
     padding: .25rem;
 }
-
 #burguerBtn{
     font-size: 1.4rem;
     background: transparent;
@@ -90,55 +74,41 @@ nav ul li a{
     width: 100%;
     color: #E2F3EC;
 }
-
 #burguerBtn span:nth-child(1) {display: block;}
 #burguerBtn span:nth-child(2) {display: none;}
 #burguerBtn.open span:nth-child(1) {display: none;}
 #burguerBtn.open span:nth-child(2) {display: block;}
-
 main{
     margin: 1.75em; 
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 15px;
 }
-
 #date{
     padding: 1.2rem;
     background-color: #FFFFFF;
 }
-
 main section{
     padding: 1rem;
     background-color: #FFFFFF;
 }
-
 #action-call, #most-visited, #weather, #forecast, #date{
     text-align: center;
     border: 2px solid #030051;
 }
-
-#action-call h2{
-    font-size: 2rem;
-}
-
-#img-desc{
-    padding-bottom: 0;
-}
-
+#action-call h2{font-size: 2rem;}
+#img-desc{padding-bottom: 0;}
 #action-call p{
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 2rem;
 }
-
 #action-button{
     background-color: #030051;
     color: #E6E4D5;
     padding: .75rem;
     border-radius: 9px;
 }
-
 #temple1, #temple2, #temple3{
     max-width: 300px;
     background-color: #E2F3EC;
@@ -146,35 +116,24 @@ main section{
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-
 #most-temples{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
-
-#temple1 img, #temple2 img, #temple3 img{
-    width: 100%;
-}
-
-#temple3{
-    display: none;
-}
-
+#temple1 img, #temple2 img, #temple3 img{width: 100%;}
+#temple3{display: none;}
 #img-temp{
     display: flex;
     justify-content: space-around;
     padding: 0;
 }
-
 #icon{
     display: flex;
     align-items: center;
 }
-
 #img-temp p{font-size: 2.2rem;}
-
 #desc{
     font-size: 1.5rem;
     border-bottom: 1px solid #030051;
@@ -182,16 +141,13 @@ main section{
     margin-bottom: 0;
     margin-top: 0;
 }
-
 #humidity-wind-chill{padding: 0;}
-
 #w-humidity, #wind, #feels{
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-around;
 }
-
 .day1, .day2, .day3{
     display: flex;
     justify-content: space-around;
@@ -199,10 +155,8 @@ main section{
     border: 2px solid #030051;
     padding: 0;
 }
-
 .day1 section, .day2 section, .day3 section{padding: 0;}
 .day2, .day3{margin-top: 1rem;}
-
 footer{
     background-color: #0F084B;
     padding: 1rem;
@@ -210,19 +164,7 @@ footer{
     font-size: 1em;
     color: #E2F3EC;
 }
-
-#contact-info p a{
-    color: #E2F3EC;
-}
-
-#api-credit{
-    padding: .75rem;
-}
-
-#api-credit a{
-    color: #E2F3EC;
-}
-
-#lower-footer{
-    border-top: 1px solid #E2F3EC;
-}
+#contact-info p a{color: #E2F3EC;}
+#api-credit{padding: .75rem;}
+#api-credit a{color: #E2F3EC;}
+#lower-footer{border-top: 1px solid #E2F3EC;}
