@@ -172,6 +172,7 @@ footer{
 #temple-content{
     display: block;
 }
+#main-title{text-align: center; margin-top: 2.5rem; font-size: 1.7rem;}
 #cards{
     display: flex;
     flex-wrap: wrap;
@@ -190,8 +191,8 @@ footer{
     height: 100%;
     transition: transform 1s;
     transform-style: preserve-3d;
-    cursor: pointer;
     position: relative;
+    border-radius: 5px;
 }
 .card:hover .temple-card{
     transform: rotateY(180deg);
@@ -203,6 +204,7 @@ footer{
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     overflow: hidden;
+    border-radius: 5px;
 }
 .temple-card-front{
     padding: 1rem;
@@ -232,9 +234,18 @@ footer{
     width: 100%;
     background: transparent;
     padding: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
+    background-color: #0F084B;
+    color: #E2F3EC;
+    border-radius: 3px;
+}
+.reserveBtn{
+    border-left: none;
+    margin-left: 0.25rem;
 }
 .btn-container{
     display: flex;
     justify-content: space-around;
-    margin-top: .75rem;
+    margin-top: .5rem;
 }

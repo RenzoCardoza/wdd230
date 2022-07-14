@@ -8,6 +8,8 @@ async function getTemples(){
         const data = await response.json();
         console.log(data.temples);
         showTemples(data.temples);
+
+        listenLikes();
     }
 }
 //function to display the temples into cards
@@ -28,7 +30,7 @@ function showTemples(temples){
         templeContainer.setAttribute("src", temple.photos.small);
         templeContainer.setAttribute("alt", `${temple.name} photo`);
         //element for the name of the temple
-        const nameElem = document.createElement("p");
+        const nameElem = document.createElement("h3");
         nameElem.textContent = temple.name;
         //container for buttons
         const btnContainer = document.createElement("div");
@@ -36,12 +38,14 @@ function showTemples(temples){
         //like button element
         const likeBtn = document.createElement("button");
         likeBtn.classList.add("likeBtn");
-        likeBtn.textContent = "Like";
-        btnContainer.appendChild(likeBtn);
+        likeBtn.classList.add("unclicked");
+        likeBtn.textContent = "Like"; 
+        btnContainer.appendChild(likeBtn);  
         //reserve now button
         const reserveBtn = document.createElement("button");
         reserveBtn.classList.add("reserveBtn");
         reserveBtn.textContent = "Reserve Now";
+        reserveBtn.setAttribute("onclick", "location.href = 'reservations.html'");
         btnContainer.appendChild(reserveBtn);
         //BACK SIDE
         const backCard = document.createElement("div");
@@ -80,3 +84,20 @@ function showTemples(temples){
     });
 }
 getTemples(); 
+
+function listenLikes(){
+    let likeBtns = document.querySelectorAll(".likeBtn");
+        likeBtns.forEach(likeBtn => {
+            likeBtn.addEventListener("click", (ebent) =>{
+                ebent.target.classList.toggle("clicked");
+                ebent.target.classList.toggle("unclicked");
+                if (ebent.target.classList.contains("clicked")){
+                    likeBtn.textContent = "Liked!";
+                    localStorage.setItem("likes", likeBtn);
+                }
+                else{
+                    likeBtn.textContent = "Like";
+                }
+            });
+        });
+}

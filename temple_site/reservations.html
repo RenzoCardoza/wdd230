@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Temple Inn & Suites | Home</title>
-	<meta name="description" content="Temple Inn & Suites home page by Renzo Cardoza 
+	<title>Temple Inn & Suites | Temples</title>
+	<meta name="description" content="Temple Inn & Suites reservations page by Renzo Cardoza 
 	in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
 
 	<link rel="icon" href="temple_icon.ico">
@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="css/large.css">
 </head>
 <body>
-	<header>
+    <header>
 		<section id="upper-header">
 			<div id="logo-container">
 				<picture>
@@ -38,83 +38,17 @@
 				<button id="burguerBtn"><span>&#9776;</span><span>X</span></button>
 			</div>
 			<ul id="primaryNav">
-				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="temples.html">Temples</a></li>
-				<li><a href="reservations.html">Reservation</a></li>
+				<li class="active"><a href="reservations.html">Reservation</a></li>
 				<li><a href="#">Services</a></li>
 			</ul>
 		</nav>
 	</header>
+    <main>
 
-	<main>
-		<div id="date"></div>
-
-		<section id="action-call">
-			<h2>
-				Stay near your favorite temple around the world
-			</h2>
-			<section id="img-desc">
-				<picture>
-					<img src="images/placeholder_300.png" data-src="images/temples/temple_guayaquil_400.jpg" alt="an image of a temple">
-				</picture>
-
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Aspernatur, recusandae. Veritatis ipsa minima nobis dignissimos 
-					velit dolor ducimus minus, alias dolorum sed saepe numquam 
-					reprehenderit deleniti cupiditate architecto consectetur magnam 
-					maxime. Repellat aliquid alias corporis culpa possimus deleniti eveniet, 
-					magni perspiciatis nobis est neque. Nostrum optio voluptatem doloribus  
-				</p>
-			</section>
-			<a href="#"><h3 id="action-button">Reserve Now!</h3></a>
-		</section>
-
-		<section id="most-visited">
-			<h2>Most Visited Temples</h2>
-
-			<article id="most-temples">
-				<section id="temple1"></section>
-				<section id="temple2"></section>
-				<section id="temple3"></section>		
-			</article>
-		</section>
-
-		<section id="weather">
-			<h2>Weather</h2>
-
-			<section id="img-temp">
-				<div id="icon"></div>
-				<p><span id="temperature"></span><span>°C</p>
-			</section>
-
-			<p id="desc">weather description</p>
-			<section id="humidity-wind-chill">
-				
-				<section id="w-humidity">
-					<p>Humidity: </p>
-					<p><span id="humidity"></span>%</p>
-				</section>
-
-				<section id="wind">
-					<p>Wind Speed: </p>
-					<p><span id="wind-speed"></span>Km/h</p>
-				</section>
-
-				<section id="feels">
-					<p>Feels Like: </p>
-					<p><span id="feels-like"></span>°C</p>
-				</section>
-			</section>
-		</section>
-
-		<section id="forecast">
-			<h2>Weather Forecast</h2>
-			<section id="days"></section>
-		</section>
-	</main>
-
-	<footer>
+    </main>
+    <footer>
 		<picture>
 			<img src="images/temple_inn_logo_100.jpg" alt="temple inn logo">
 		</picture>
@@ -150,8 +84,7 @@
 			</section>
 		</section>
 	</footer>
-	<script defer src="js/main.js"></script>
-	<script defer src="js/weather.js"></script>
-	<script defer src="js/home-temples.js"></script>
+    <script defer src="js/main.js"></script>
+	<script defer src="js/temples.js"></script>
 </body>
 </html>
