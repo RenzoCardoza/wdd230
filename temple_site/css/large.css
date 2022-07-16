@@ -128,4 +128,31 @@
     }
     /* temples page*/
     #main-title{font-size: 2rem;}
+    /* reservation page*/
+    #reserve-title{
+        left: 37%;
+        top: 38.5%;
+        font-size: 4.5rem;
+    }
+    #reservation-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #thanks-message{
+        grid-column: 1 / 4;
+        grid-row: 1;
+    }
+    #form-div{
+        grid-column: 1 / 3;
+        grid-row: 2;
+    }
+    #room-photos{
+        grid-column: 3;
+        grid-row: 2;
+        flex-direction: column;
+
+    }
+    #room3{
+        display: block;
+    }
 }

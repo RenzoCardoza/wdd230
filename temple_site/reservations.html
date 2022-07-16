@@ -45,8 +45,94 @@
 			</ul>
 		</nav>
 	</header>
-    <main>
 
+	<div class="reservation-banner">
+		<picture id="banner">
+			<source media="(min-width: 67.5em)" srcset="images/reservation/hotel_banner_900.jpg">
+			<source media="(min-width: 37.5em) and (max-width: 66.5em)" srcset="images/reservation/hotel_banner_800.jpg">
+			<img src="images/reservation/hotel_banner_1080.jpg" alt="hotel room image">
+		</picture>
+		<h1 id="reserve-title">Reservations</h1>
+	</div>
+    
+	<main id="reservation-content">
+		<div id="thanks-message">
+			<h2>Thanks for trusting us</h2>
+			<p>
+				We want to make sure to give the best stay near the sacred 
+				House of the Lord.
+			</p>
+			<p>
+				We only need a few details from you to reserve your room in our
+				facilities. Please fill out the following form.
+			</p>
+			<p id="signature">-Mike Anderson, CEO at Temple Inn & Suites</p>
+		</div>
+		<div id="form-div">
+			<form method="get" action="thankyou.html">
+				<legend id="form-title">Reserve a room</legend>
+				<fieldset id="personal-info">
+					<legend>Registrant Information</legend>
+					<label class="info">First Name* <input type="text" name="fname" required></label>
+					<label class="info">Last Name* <input type="text" name="lname" required></label>
+					<label class="info">E-mail* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+					<label class="info">Cellphone Number* <input type="tel" name="phone" required></label>
+					<label class="info">Home State* <input type="text" name="state" required></label>	
+				</fieldset>
+				<fieldset id="stay-info">
+					<legend>Stay Information</legend>
+
+					<div id="location">
+						<label class="t-location">Temple Location* 
+							<select name="temple" id="temple-location">
+								<option value="">--Please select a temple--</option>
+							</select>
+						</label>
+					</div>
+
+					<div id="stay-dates">
+						<label class="stay-date">Start Date* <input type="date" id="start" name="trip-start" value="2022-07-22"
+							min="01-01-2022" max="31-12-2023" required></label>
+						<label class="stay-date">End Date* <input type="date" id="end" name="trip-end" value="2022-07-22"
+							min="01-01-2022" max="31-12-2023" required></label>
+					</div>
+				</fieldset>
+				<fieldset class="room-select">
+					<legend>Room Selection</legend>
+					<div id="rooms-desc">
+						<div id="radio-buttons">
+							<label class="room"><input type="radio" name="roomtype" class="radio" required> Single Room</label>
+							<label class="room"><input type="radio" name="roomtype" class="radio" required> Twin Room</label>
+							<label class="room"><input type="radio" name="roomtype" class="radio" required> Quad Room</label>
+							<label class="room"><input type="radio" name="roomtype" class="radio" required> Suite Room</label>
+							<label class="room"><input type="radio" name="roomtype" class="radio" required> Duplex Room</label>
+						</div>
+						<div id="desc-div">
+							<h3>Room Description</h3>
+							<span id="r-desc">Select a room to see its description</span>
+						</div>
+					</div>
+					<div id="comments">
+						<label class="comment">Special accomodations/Comments <textarea id="description" name="description" 
+							placeholder="Language Aid, specific services, etc."></textarea></label>
+					</div>
+				</fieldset>
+				<div id="thebutton">
+					<input type="submit" class="submitBtn" value="Reserve">
+				</div>
+			</form>
+		</div>
+		<div id="room-photos">
+			<picture class="room-picture" id="room1">
+				<img src="images/reservation/room1_300.jpg" alt="suite room">
+			</picture>
+			<picture class="room-picture" id="room2">
+				<img src="images/reservation/room2_300.jpg" alt="single room">
+			</picture>
+			<picture class="room-picture" id="room3">
+				<img src="images/reservation/room3_300.jpg" alt="twin room">
+			</picture>
+		</div>
     </main>
     <footer>
 		<picture>
@@ -70,9 +156,6 @@
 				</p>
 			</section>
 		</section>
-		<section id="api-credit">
-			<p>Weather Information is powered by <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
-		</section>
 		<section id="lower-footer">
 			<section id="copyright-name">
 				<p>&copy; <span id="year"></span> All rights reserved</p>
@@ -85,6 +168,6 @@
 		</section>
 	</footer>
     <script defer src="js/main.js"></script>
-	<script defer src="js/temples.js"></script>
+	<script defer src="js/reservation.js"></script>
 </body>
 </html>
