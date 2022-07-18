@@ -110,6 +110,15 @@ main section{
     padding: .75rem;
     border-radius: 9px;
 }
+#img-desc img{
+    border: 2px solid #0F084B;
+    border-radius: 4px;
+}
+#action-desc{
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+#temple-home img{width: 100%;}
 #temple1, #temple2, #temple3{
     max-width: 300px;
     background-color: #E2F3EC;
@@ -117,11 +126,17 @@ main section{
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+#temple1 h4, #temple2 h4, #temple3 h4{
+    margin-bottom: 0;
+}
 #most-temples{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+#temple-button{
+    margin-top: 1.1rem;
 }
 #temple1 img, #temple2 img, #temple3 img{width: 100%;}
 #temple3{display: none;}
@@ -167,8 +182,11 @@ footer{
 }
 #contact-info p a{color: #E2F3EC;}
 #api-credit{padding: .75rem;}
-#api-credit a{color: #E2F3EC;}
+#api-credit a{color: #E2F3EC; text-decoration: underline;}
 #lower-footer{border-top: 1px solid #E2F3EC;}
+footer img{
+    border-radius: 5px;
+}
 /* temples page */
 #temple-content{
     display: block;
@@ -261,7 +279,7 @@ footer{
 #reserve-title{
     position: absolute;
     top: 39%;
-    left: 30%;
+    left: 27%;
     margin: 0;
     text-align: center;
     color: #E2F3EC;
@@ -328,7 +346,7 @@ form textarea{
     padding: .75rem;
     display: block;
 }
-#r-desc{text-align: justify;}
+#r-desc{text-align: justify; line-height: 1.8rem;}
 #desc-div{margin-bottom: 2rem;}
 form textarea{min-height: 9rem;}
 #thebutton{
@@ -337,7 +355,7 @@ form textarea{min-height: 9rem;}
     margin-top: 1rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
-input.submitBtn{
+input.submitBtn, #temple-button, #returnBtn{
     font-size: 1.1rem;
     border: none;
     padding: .75rem;
@@ -345,8 +363,29 @@ input.submitBtn{
     width: 9rem;
     background-color: #0F084B;
     color: #E2F3EC;
+    cursor: pointer;
 }
 #room-photos{
     display: none;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+/* thankyou page*/
+#confimation-content{
+    grid-template-columns: 1fr;
+}
+#confirm-message{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+    align-items: center;
+}
+#returnBtn {width: 11em; margin-top: 1.5rem;}
+#check-img{padding: 1rem;}
+#check-img img{
+    width: 100%;
+}
+#confirm-message p{
+    text-align: center;
 }

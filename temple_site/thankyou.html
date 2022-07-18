@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Temple Inn & Suites | Home</title>
-	<meta name="description" content="Temple Inn & Suites home page by Renzo Cardoza 
+	<title>Temple Inn & Suites | Temples</title>
+	<meta name="description" content="Temple Inn & Suites temples page by Renzo Cardoza 
 	in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
 
 	<link rel="icon" href="temple_icon.ico">
@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="css/large.css">
 </head>
 <body>
-	<header>
+    <header>
 		<section id="upper-header">
 			<div id="logo-container">
 				<picture>
@@ -38,87 +38,30 @@
 				<button id="burguerBtn"><span>&#9776;</span><span>X</span></button>
 			</div>
 			<ul id="primaryNav">
-				<li class="active"><a href="index.html">Home</a></li>
-				<li><a href="temples.html">Temples</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="temples.html">Temples</a></li>
 				<li><a href="reservations.html">Reservation</a></li>
 				<li><a href="#">Services</a></li>
 			</ul>
 		</nav>
 	</header>
-
-	<main>
-		<div id="date"></div>
-
-		<section id="action-call">
-			<h2>
-				Stay near your favorite temple around the world
-			</h2>
-			<section id="img-desc">
-				<div id="temple-home">
-					<picture>
-						<source media="(min-width: 37.5em)" srcset="images/temples/guayaquil_temple_500.jpg">
-						<img src="images/temples/guayaquil_temple_300.jpg" data-src="images/temples/guayaquil_temple_300.jpg" alt="Guayaquil Temple" loading="lazy">
-					</picture>
-				</div>
-				<p id="action-desc">
-					Found in the north of the beautiful Guayaquil city. Announced on March 31, 1982, 
-					and later dedicated on August 1, 1999. This temple was a miracle for the Ecuadorian 
-					people. Annually receives visitors from all over the world. Take the chance to discover 
-					this temple and Guayaquil city during your stay. Our location associated with Guayaquil 
-					Temple is near many essential places such as banks, markets, etc. 
-				</p>
-			</section>
-			<a href="reservations.html"><h3 id="action-button">Reserve Now!</h3></a>
-		</section>
-
-		<section id="most-visited">
-			<h2>Most Visited Temples</h2>
-
-			<article id="most-temples">
-				<section id="temple1"></section>
-				<section id="temple2"></section>
-				<section id="temple3"></section>		
-			</article>
-			<div id="see-temples">
-				<button id="temple-button" onclick="location.href = 'temples.html'">See Temples</button>
-			</div>
-		</section>
-
-		<section id="weather">
-			<h2>Weather</h2>
-
-			<section id="img-temp">
-				<div id="icon"></div>
-				<p><span id="temperature"></span><span>°C</p>
-			</section>
-
-			<p id="desc">weather description</p>
-			<section id="humidity-wind-chill">
-				
-				<section id="w-humidity">
-					<p>Humidity: </p>
-					<p><span id="humidity"></span>%</p>
-				</section>
-
-				<section id="wind">
-					<p>Wind Speed: </p>
-					<p><span id="wind-speed"></span>Km/h</p>
-				</section>
-
-				<section id="feels">
-					<p>Feels Like: </p>
-					<p><span id="feels-like"></span>°C</p>
-				</section>
-			</section>
-		</section>
-
-		<section id="forecast">
-			<h2>Weather Forecast</h2>
-			<section id="days"></section>
-		</section>
-	</main>
-
-	<footer>
+    <main id="confirmation-content">
+        <div id="confirm-message">
+            <h2>Done!</h2>
+            <div id="check-img">
+                <img src="images/confirmation.png" alt="confirmation check">
+            </div>
+            <p>
+                Thanks <span id="client-name"></span> for your reservation. Our reservation team will 
+                send an email as soon as posible with your reservation details. We hope to see you soon. 
+            </p>
+            <p>
+                -Temple Inn & Suites Reservations staff-
+            </p>
+            <button onclick="location.href = 'index.html'" id="returnBtn">Return to Main Page</button>
+        </div>
+    </main>
+    <footer>
 		<picture>
 			<img src="images/temple_inn_logo_100.jpg" alt="temple inn logo">
 		</picture>
@@ -141,8 +84,6 @@
 			</section>
 		</section>
 		<section id="api-credit">
-			<p id="weather-credit">Weather Information is powered by <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
-			<span id="bar">|</span>
 			<p id="attributions">
 				Content belongs to <a href="https://www.churchofjesuschrist.org/temples/list?lang=eng">The Church of Jesus Christ of Latter-day Saints</a>
 			</p>
@@ -158,8 +99,6 @@
 			</section>
 		</section>
 	</footer>
-	<script defer src="js/main.js"></script>
-	<script defer src="js/weather.js"></script>
-	<script defer src="js/home-temples.js"></script>
+    <script defer src="js/main.js"></script>
 </body>
 </html>

@@ -125,7 +125,11 @@
     }
     #api-credit{
         font-size: 1.1rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;    
     }
+    #weather-credit {margin-right: 5.5rem;}
     /* temples page*/
     #main-title{font-size: 2rem;}
     /* reservation page*/
