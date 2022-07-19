@@ -10,7 +10,7 @@ h1, h2, h3, h4, #date, form legend{
     color: #030051;
 }
 p, ul, #action-button, .likeBtn, .reserveBtn,
-form label, #r-desc, #temple-button{
+form label, #r-desc, #temple-button, #buttons{
     font-family: 'Edu NSW ACT Foundation', cursive;
     letter-spacing: 0.07rem;
 }
@@ -364,13 +364,34 @@ input.submitBtn, #temple-button, #returnBtn{
 #check-img img{width: 100%;}
 #confirm-message p{text-align: center;}
 /* services page */
-#services-amenities{
+#menu{
+    background-color: #0F084B;
+    padding: 1rem;
+}
+#menu h2{
+    color: #E2F3EC;
+    text-align: center;
+}
+#buttons{display: flex; justify-content: space-around; background-color: #030051;}
+#buttons button{
+    padding: .5rem;
+    border-radius: 10px;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    background: #E2F3EC;
+    font-size: 1.1rem;
+}
+.activeBtn{opacity: .6;}
+#services-amenities.hide, #reception.hide{
+    display: none;
+}
+#services-amenities, #reception{
     background-color: #FFFFFF;
     padding: 1rem;
     border: 1px solid #0F084B;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-#services-amenities h2{
+#services-amenities h2, #reception h2{
     text-align: center;
     font-size: 2rem;
 }
@@ -417,7 +438,7 @@ input.submitBtn, #temple-button, #returnBtn{
     background-color: #E2F3EC;
     margin-top: .75rem;
 }
-#divisor{
+#divisor, #divisor2{
     border-top: 3px solid #0F084B;
     margin-top: 3rem;
     margin-bottom: 3rem;
