@@ -88,4 +88,22 @@
         font-size: 1.2rem;
         padding: 2rem;
     }
+    /* services page*/
+    #services-content{
+        grid-template-columns: 1fr;
+    }
+    #services-amenities{padding: 1.8rem;}
+    #services{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    #amenities{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .amenitie{
+        min-width: 14rem;
+    }
 }  

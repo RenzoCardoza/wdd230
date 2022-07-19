@@ -10,7 +10,7 @@ h1, h2, h3, h4, #date, form legend{
     color: #030051;
 }
 p, ul, #action-button, .likeBtn, .reserveBtn,
-form label, #r-desc{
+form label, #r-desc, #temple-button{
     font-family: 'Edu NSW ACT Foundation', cursive;
     letter-spacing: 0.07rem;
 }
@@ -126,18 +126,14 @@ main section{
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-#temple1 h4, #temple2 h4, #temple3 h4{
-    margin-bottom: 0;
-}
+#temple1 h4, #temple2 h4, #temple3 h4{margin-bottom: 0;}
 #most-temples{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
-#temple-button{
-    margin-top: 1.1rem;
-}
+#temple-button{margin-top: 1.1rem;}
 #temple1 img, #temple2 img, #temple3 img{width: 100%;}
 #temple3{display: none;}
 #img-temp{
@@ -184,13 +180,9 @@ footer{
 #api-credit{padding: .75rem;}
 #api-credit a{color: #E2F3EC; text-decoration: underline;}
 #lower-footer{border-top: 1px solid #E2F3EC;}
-footer img{
-    border-radius: 5px;
-}
+footer img{border-radius: 5px;}
 /* temples page */
-#temple-content{
-    display: block;
-}
+#temple-content{display: block;}
 #main-title{text-align: center; margin-top: 2.5rem; font-size: 1.7rem;}
 #cards{
     display: flex;
@@ -213,9 +205,7 @@ footer img{
     position: relative;
     border-radius: 5px;
 }
-.card:hover .temple-card{
-    transform: rotateY(180deg);
-}
+.card:hover .temple-card{transform: rotateY(180deg);}
 .card-face{
     position: absolute;
     width: 100%;
@@ -231,9 +221,7 @@ footer img{
     flex-direction: column;
     justify-content: space-around;
 }
-.temple-card-front p{
-    font-size: 1.3rem;
-}
+.temple-card-front p{font-size: 1.3rem;}
 .temple-card-back{
     transform: rotateY(180deg);
     padding: 1rem;
@@ -246,9 +234,7 @@ footer img{
     justify-content: space-around;
     height: 100%;
 }
-.card-face .temple-card-front img{
-    width: 100%;
-}
+.card-face .temple-card-front img{width: 100%;}
 .likeBtn, .reserveBtn{
     width: 100%;
     background: transparent;
@@ -269,9 +255,7 @@ footer img{
     margin-top: .5rem;
 }
 /* reservation page*/
-.reservation-banner{
-    position: relative;
-}
+.reservation-banner{position: relative;}
 #banner img{
     width: 100%;
     filter: brightness(40%);
@@ -284,12 +268,8 @@ footer img{
     text-align: center;
     color: #E2F3EC;
 }
-#reserve-title span{
-    background: rgba(0, 0, 0, 0.04);
-}
-#reservation-content{
-    grid-gap: 25px;
-}
+#reserve-title span{background: rgba(0, 0, 0, 0.04);}
+#reservation-content{grid-gap: 25px;}
 #thanks-message{
     text-align: center;
     padding: 1rem;
@@ -370,9 +350,7 @@ input.submitBtn, #temple-button, #returnBtn{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 /* thankyou page*/
-#confimation-content{
-    grid-template-columns: 1fr;
-}
+#confimation-content{grid-template-columns: 1fr;}
 #confirm-message{
     background-color: #FFFFFF;
     display: flex;
@@ -383,9 +361,64 @@ input.submitBtn, #temple-button, #returnBtn{
 }
 #returnBtn {width: 11em; margin-top: 1.5rem;}
 #check-img{padding: 1rem;}
-#check-img img{
-    width: 100%;
+#check-img img{width: 100%;}
+#confirm-message p{text-align: center;}
+/* services page */
+#services-amenities{
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border: 1px solid #0F084B;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-#confirm-message p{
+#services-amenities h2{
     text-align: center;
+    font-size: 2rem;
+}
+#services{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#clothes, #baby, #kitchen,
+#sitting-area, #wedding, #familysearch{
+    text-align: center;
+    padding: 1rem;
+    border-radius: 30px;
+    border: 2px solid #0F084B;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-top: 1.5rem;
+}
+#clothes h3, #baby h3, #kitchen h3,
+#sitting-area h3, #wedding h3, #familysearch h3{
+    text-decoration: underline;
+    line-height: 2rem;
+}
+#clothes p, #baby p, #kitchen p,
+#sitting-area p, #wedding p, #familysearch p{
+    line-height: 1.8rem;
+}
+.service{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-around; 
+    align-items: center;
+    background-color: #E2F3EC;
+}
+#amenities{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.amenitie{
+    text-align: center;
+    padding: .30rem;
+    border-radius: 30px;
+    border: 2px solid #0F084B;
+    background-color: #E2F3EC;
+    margin-top: .75rem;
+}
+#divisor{
+    border-top: 3px solid #0F084B;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }

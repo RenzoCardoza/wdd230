@@ -165,4 +165,56 @@
     #room3, #room4{
         display: block;
     }
+    /* service page */
+    #services-amenities h2{
+        font-size: 5rem;
+        line-height: 7rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border-radius: 30px;
+        padding: 3.2rem;
+        margin-top: 5.3rem;
+    }
+    #services{
+        grid-template-columns: 1fr 1fr;
+    }
+    .service p{
+        font-size: 1.2rem;
+    }
+    #services-amenities{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        align-items: center;
+    }
+    #service-title{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    #services{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .service{
+        transition: transform .3s;
+    }
+    .service:hover{
+        transform: scale(1.08);
+    }
+    #divisor{
+        grid-column: 1 / 3;
+        grid-row: 2;
+    }
+    #amenities-title{
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .amenitie{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        transition: transform .3s;
+        font-size: 1.1rem;
+    }
+    .amenitie:hover{
+        transform: scale(1.07);
+    }
+
 }
