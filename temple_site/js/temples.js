@@ -115,12 +115,14 @@ function saveLikes(){
 function setLikes(){
     let textBtns = JSON.parse(localStorage.getItem("likes"));
     let likeBtns = document.querySelectorAll(".likeBtn");
-    let length = textBtns.length;
-    if(length > 0){
+
+    if(textBtns != null){
         for(let i = 0; i <= 11; i++){
             if (likeBtns[i].textContent != textBtns[i]){
                 likeBtns[i].textContent = textBtns[i];
             }
         }
+    } else{
+        saveLikes();
     }
 }
