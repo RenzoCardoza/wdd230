@@ -1,5 +1,5 @@
 @media only screen and (min-width: 67rem){
-    
+
     #logo-container{
         display: flex;
         align-items: center;
@@ -127,7 +127,7 @@
         font-size: 1.1rem;
         display: flex;
         justify-content: space-around;
-        align-items: center;    
+        align-items: center;
     }
     #weather-credit {margin-right: 5.5rem;}
     /* temples page*/
@@ -166,6 +166,12 @@
         display: block;
     }
     /* service page */
+    #buttons{
+        flex-direction: row;
+    }
+    #serviceBtn, #receptionBtn, #missionaryBtn{
+        width: 30%;
+    }
     #services-amenities h2{
         font-size: 5rem;
         line-height: 7rem;
@@ -210,8 +216,8 @@
         transition: transform .3s;
         font-size: 1.1rem;
     }
-    .f-service{transition: transform .3s; font-size: 1.2rem;}
-    .amenitie:hover, .f-service:hover{
+    .f-service, .suite{transition: transform .3s; font-size: 1.2rem;}
+    .amenitie:hover, .f-service:hover, .suite:hover{
         transform: scale(1.07);
     }
     #accomodations{
@@ -220,12 +226,13 @@
     #accomodations div:nth-child(11){
         grid-column: 1 / 6;
     }
-    .accomodation{box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
-    #reception h2{
+    .accomodation, .suite{box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+    #reception h2, #missionaries h2{
         font-size: 3rem;
         padding: 5rem;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         border-radius: 40px;
     }
     #setup{box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+
 }

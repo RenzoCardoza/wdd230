@@ -372,10 +372,17 @@ input.submitBtn, #temple-button, #returnBtn{
     color: #E2F3EC;
     text-align: center;
 }
-#buttons{display: flex; justify-content: space-around; background-color: #030051;}
+#buttons{
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around; 
+    background-color: #030051;
+    flex-wrap: wrap;
+}
 #buttons button{
-    padding: .5rem;
+    padding: .75rem;
     border-radius: 10px;
+    margin-top: .5rem;
     margin-left: .5rem;
     margin-right: .5rem;
     background: #E2F3EC;
@@ -393,7 +400,7 @@ input.submitBtn, #temple-button, #returnBtn{
 }
 #services-amenities h2, #reception h2, #missionaries h2{
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 #services{
     display: flex;
@@ -404,7 +411,7 @@ input.submitBtn, #temple-button, #returnBtn{
     text-decoration: underline;
     line-height: 2rem;
 }
-.service p, .f-service p, #setup{
+.service p, .f-service p, #setup, .suite p{
     line-height: 1.8rem;
 }
 .service, .f-service{
@@ -438,7 +445,7 @@ input.submitBtn, #temple-button, #returnBtn{
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
-.accomodation{font-size: 1.2rem;}
+.accomodation{font-size: 1rem;}
 #setup{
     background-color: #E2F3EC;
     padding: 1rem;
@@ -457,4 +464,5 @@ input.submitBtn, #temple-button, #returnBtn{
 .suite{padding: 1rem;}
 .suite img{
     border-radius: 10px;
+    width: 230px;
 }

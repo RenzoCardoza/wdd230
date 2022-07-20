@@ -119,4 +119,9 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 30px;
     }
+    #suites{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
 }  
