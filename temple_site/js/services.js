@@ -5,7 +5,7 @@ const missionaryBtn = document.querySelector("#missionaryBtn");
 //content
 const serviceAmenitieContent = document.querySelector("#services-amenities");
 const receptionContent = document.querySelector("#reception");
-const templeMissionaries = document.querySelector("#temple-missionaries");
+const templeMissionaries = document.querySelector("#missionaries");
 //event listners
 serviceBtn.addEventListener("click", () =>{
     //add and remove the corresponding class
@@ -14,7 +14,7 @@ serviceBtn.addEventListener("click", () =>{
     missionaryBtn.classList.remove("activeBtn");
     //change the layout of the page
     receptionContent.classList.add("hide");
-    // templeMissionaries.classList.remove("show");
+    templeMissionaries.classList.add("hide");
     serviceAmenitieContent.classList.remove("hide");
 });
 receptionBtn.addEventListener("click", () =>{
@@ -23,7 +23,7 @@ receptionBtn.addEventListener("click", () =>{
         receptionBtn.classList.add("activeBtn");
         missionaryBtn.classList.remove("activeBtn");
         //change the layout of the page
-        // templeMissionaries.classList.remove("show");
+        templeMissionaries.classList.add("hide");
         serviceAmenitieContent.classList.add("hide");
         receptionContent.classList.remove("hide");
 });
@@ -34,6 +34,6 @@ missionaryBtn.addEventListener("click", () =>{
     missionaryBtn.classList.add("activeBtn");
     //change the layout of the page
     serviceAmenitieContent.classList.add("hide");
-    // receptionContent.classList.remove("show");
-    // templeMissionaries.classList.add("show");
+    receptionContent.classList.add("hide");
+    templeMissionaries.classList.remove("hide");
 });

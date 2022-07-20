@@ -194,12 +194,9 @@
         grid-column: 2;
         grid-row: 1;
     }
-    .service{
-        transition: transform .3s;
-    }
-    .service:hover{
-        transform: scale(1.08);
-    }
+    .service, .accomodation{transition: transform .3s;}
+    .service:hover{transform: scale(1.08);}
+    .accomodation:hover{transform: scale(1.04);}
     #divisor{
         grid-column: 1 / 3;
         grid-row: 2;
@@ -213,8 +210,22 @@
         transition: transform .3s;
         font-size: 1.1rem;
     }
-    .amenitie:hover{
+    .f-service{transition: transform .3s; font-size: 1.2rem;}
+    .amenitie:hover, .f-service:hover{
         transform: scale(1.07);
     }
-
+    #accomodations{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    #accomodations div:nth-child(11){
+        grid-column: 1 / 6;
+    }
+    .accomodation{box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+    #reception h2{
+        font-size: 3rem;
+        padding: 5rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border-radius: 40px;
+    }
+    #setup{box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
 }

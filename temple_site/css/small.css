@@ -382,16 +382,16 @@ input.submitBtn, #temple-button, #returnBtn{
     font-size: 1.1rem;
 }
 .activeBtn{opacity: .6;}
-#services-amenities.hide, #reception.hide{
+#services-amenities.hide, #reception.hide, #missionaries.hide{
     display: none;
 }
-#services-amenities, #reception{
+#services-amenities, #reception, #missionaries{
     background-color: #FFFFFF;
     padding: 1rem;
     border: 1px solid #0F084B;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-#services-amenities h2, #reception h2{
+#services-amenities h2, #reception h2, #missionaries h2{
     text-align: center;
     font-size: 2rem;
 }
@@ -400,8 +400,19 @@ input.submitBtn, #temple-button, #returnBtn{
     flex-direction: column;
     justify-content: space-around;
 }
-#clothes, #baby, #kitchen,
-#sitting-area, #wedding, #familysearch{
+.service h3, .f-service h3, .suite h3{
+    text-decoration: underline;
+    line-height: 2rem;
+}
+.service p, .f-service p, #setup{
+    line-height: 1.8rem;
+}
+.service, .f-service{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-around; 
+    align-items: center;
+    background-color: #E2F3EC;
     text-align: center;
     padding: 1rem;
     border-radius: 30px;
@@ -409,28 +420,12 @@ input.submitBtn, #temple-button, #returnBtn{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     margin-top: 1.5rem;
 }
-#clothes h3, #baby h3, #kitchen h3,
-#sitting-area h3, #wedding h3, #familysearch h3{
-    text-decoration: underline;
-    line-height: 2rem;
-}
-#clothes p, #baby p, #kitchen p,
-#sitting-area p, #wedding p, #familysearch p{
-    line-height: 1.8rem;
-}
-.service{
-    display: flex; 
-    flex-direction: column; 
-    justify-content: space-around; 
-    align-items: center;
-    background-color: #E2F3EC;
-}
-#amenities{
+#amenities, #accomodation, #suites{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.amenitie{
+.amenitie, .accomodation, .suite{
     text-align: center;
     padding: .30rem;
     border-radius: 30px;
@@ -438,8 +433,28 @@ input.submitBtn, #temple-button, #returnBtn{
     background-color: #E2F3EC;
     margin-top: .75rem;
 }
-#divisor, #divisor2{
+#divisor, #divisor2, #divisor3, #divisor4{
     border-top: 3px solid #0F084B;
     margin-top: 3rem;
     margin-bottom: 3rem;
+}
+.accomodation{font-size: 1.2rem;}
+#setup{
+    background-color: #E2F3EC;
+    padding: 1rem;
+    border: 1px solid #0F084B;
+}
+#setup p:nth-child(1){
+    font-size: 1.1rem;
+    text-align: center;
+}
+#setup p:nth-child(2){
+    font-style: italic;
+    font-size: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+.suite{padding: 1rem;}
+.suite img{
+    border-radius: 10px;
 }
