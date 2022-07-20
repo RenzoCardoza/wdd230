@@ -11,9 +11,9 @@ async function getTemples(){
     const response = await fetch("json/temples.json");
     if (response.ok){
         const data = await response.json();
-        displayTemple(data.temples, temple1, 0);
-        displayTemple(data.temples, temple2, 1);
-        displayTemple(data.temples, temple3, 2);
+        displayTemple(data.temples, temple1, 4);
+        displayTemple(data.temples, temple2, 6);
+        displayTemple(data.temples, temple3, 9);
     }
 }
 //function to display the temples to the home page 

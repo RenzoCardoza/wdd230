@@ -6,9 +6,8 @@ async function getTemples(){
     const response = await fetch("json/temples.json");
     if (response.ok){
         const data = await response.json();
-        console.log(data.temples);
         showTemples(data.temples);
-
+        setLikes();
         listenLikes();
     }
 }
@@ -93,11 +92,33 @@ function listenLikes(){
                 ebent.target.classList.toggle("unclicked");
                 if (ebent.target.classList.contains("clicked")){
                     likeBtn.textContent = "Liked!";
-                    localStorage.setItem("likes", likeBtn);
+                    saveLikes();
                 }
                 else{
                     likeBtn.textContent = "Like";
+                    saveLikes();
                 }
             });
         });
+}
+
+function saveLikes(){
+    let likeBtns = document.querySelectorAll(".likeBtn");
+    let textBtns = [];
+    likeBtns.forEach((button) =>{
+        textBtns.push(button.textContent);
+    });
+
+    localStorage.setItem("likes", JSON.stringify(textBtns));
+}
+
+function setLikes(){
+    let textBtns = JSON.parse(localStorage.getItem("likes"));
+    let likeBtns = document.querySelectorAll(".likeBtn");
+
+    for(let i = 0; i <= 11; i++){
+        if (likeBtns[i].textContent != textBtns[i]){
+            likeBtns[i].textContent = textBtns[i];
+        }
+    }
 }
